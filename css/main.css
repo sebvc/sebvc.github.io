@@ -2732,7 +2732,7 @@ footer .copyright span:last-child::after {
 .courseworks-list .coursework {
 	text-align: center;
 	margin-bottom: 1.2rem;
-	padding: 0 30px;
+	padding: 0 60px 0 60px;
 }
 .courseworks-list .icon {
 	/* text-align: center; */
@@ -2756,9 +2756,37 @@ footer .copyright span:last-child::after {
 }
 .courseworks-list .desc {
 	color: rgba(255, 255, 255, 0.6);
-	text-align: left;
+	text-align: center;
+	font-family: "lora-regular";
+	font-weight: bolder;
+	/* font-variant: small-caps; */
+	/* font-size: larger; */
+	/* text-transform: uppercase; */
 }
+.courseworks-list .desc li{
+	display: list-item;
+	list-style: none;
+	margin-bottom: 11px;
 
+}
+/* ul.disc li {
+	display: list-item;
+	list-style: none;
+	padding: 0 0 0 .8rem;
+	position: relative;
+}
+ul.disc li::before {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #c50000;
+	position: absolute;
+	left: -17px;
+	top: 11px;
+	vertical-align: middle;
+} */
 /* .coursework-content .desc ul {
 	text-align: left;
 }
@@ -2780,7 +2808,7 @@ footer .copyright span:last-child::after {
 	display: block;
 	width: 1.2rem;
 	height: 1.2rem;
-	margin: 1.2rem .8rem 0 .8rem;
+	margin: 1.2rem .4rem 0 .4rem;
 	border-radius: 50%;
 	display: inline-block;
 	background: #FFFFFF;
