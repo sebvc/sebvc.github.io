@@ -24,6 +24,7 @@
  *  16. stats
  *  17. contact
  *  18. footer
+ *  19. coursework
  *
  * =================================================================== 
  */
@@ -222,6 +223,13 @@ abbr {
 	/* letter-spacing: .05rem; */
 	color: #888888;
 }
+abbr2 {
+	/* font-family: "poppins-bold", serif; */
+	/* font-variant: small-caps; */
+	/* text-transform: uppercase; */
+	/* letter-spacing: .05rem; */
+	color: #888888;
+}
 var, kbd, samp, code, pre {
 	font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
@@ -254,6 +262,10 @@ del {
 abbr[title], dfn[title] {
 	border-bottom: 1px ridge;
 	cursor: help;
+}
+abbr2[title], dfn[title] {
+	border-bottom: 1px ridge #FFFFFF;
+	cursor: alias;
 }
 mark {
 	background: #FFF49B;
@@ -323,7 +335,6 @@ ul.resumeBlock dd {
 	padding: 0 0 0 0;
 	margin: 0 0 0 3rem;
 	position: relative
-
 }
 ul.resumeBlock dd::before {
 	content: "";
@@ -362,6 +373,13 @@ dt {
 dd {
 	margin: 0 0 0 2rem;
 }
+dl.courseDL dt{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	position: relative;
+	color: rgba(255, 255, 255, 0.6); /*  #FFFFFF */
+}
+
 
 /**
  * tables - (_document-setup.scss)  
@@ -1131,6 +1149,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
 }
+
 
 /**
  * responsive:
@@ -2656,6 +2675,121 @@ footer .copyright span:last-child::after {
 		display: none;
 	}
 }
+
+
+/** 
+ * ===================================================================
+ * 19. coursework - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+ #courseworks {
+	background: #313131 url(../images/bg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+	color: white;
+	position: relative;
+}
+#courseworks .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #151515;
+	opacity: .9;
+}
+
+#courseworks .section-intro {
+	margin-bottom: 1.8rem;
+}
+
+#courseworks .section-intro h1 {
+	color: white;
+}
+#courseworks .section-intro h5 {
+	color: #c50000;
+}
+#courseworks .section-intro p {
+	color: rgba(255, 255, 255, 0.7);
+}
+#courseworks span.section-icon i {
+	color: #c50000;
+	font-size: 5rem;
+	line-height: 1rem;
+	margin-bottom: 0.3rem;
+}
+.coursework-content {
+	max-width: 1200px;
+}
+.courseworks-list {
+	margin-top: 1.2rem;
+	/* text-align: center; */
+}
+.courseworks-list .coursework {
+	text-align: center;
+	margin-bottom: 1.2rem;
+	padding: 0 30px;
+}
+.courseworks-list .icon {
+	/* text-align: center; */
+	display: inline-block;
+	margin-bottom: 2.1rem;
+}
+.courseworks-list .icon i {
+	font-size: 5.4rem;
+	color: #c50000;
+}
+.courseworks-list .icon img {
+	/* text-align: center; */
+	height: 6rem;
+	width: 6rem;
+	margin-bottom: -1.2rem;
+	/* color: must be manually changed from source image */
+}
+.courseworks-list h3 {
+	/* text-align: center; */
+	color: #FFFFFF;
+}
+.courseworks-list .desc {
+	color: rgba(255, 255, 255, 0.6);
+	text-align: left;
+}
+
+/* .coursework-content .desc ul {
+	text-align: left;
+}
+.courseworks-list p.desc ul {
+	text-align: left;
+	margin-block-end: 10rem;
+} */
+
+/* pagination */
+.owl-pagination {
+	text-align: center;
+	width: 100%;
+	margin: .6rem 0 0;
+}
+.owl-theme .owl-controls .owl-page {
+	display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+	display: block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin: 1.2rem .8rem 0 .8rem;
+	border-radius: 50%;
+	display: inline-block;
+	background: #FFFFFF;
+}
+.owl-theme .owl-controls .owl-page.active span {
+	background: #c50000;
+}
+
+
 
 /**
  * go to top - (_layout.scss)
