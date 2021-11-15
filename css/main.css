@@ -2319,6 +2319,14 @@ header .logo a {
 	font-size: 4.8rem;
 	color: #000000;
 }
+#stats .icon-part img {
+	/* height: 4.8rem;
+	width: 4.2rem; */
+	/* color: #000000; */
+	rotate: 30;
+	block-size: 5rem;
+	/* padding-bottom: -2.5rem; */
+}
 #stats .stat-count {
 	color: #FFFFFF;
 	font-size: 3.6rem;
