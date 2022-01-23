@@ -2731,7 +2731,7 @@ footer .copyright span:last-child::after {
 	margin-bottom: 0.3rem;
 }
 .coursework-content {
-	max-width: 1200px;
+	/* max-width: 2000px; */
 }
 .courseworks-list {
 	margin-top: 1.2rem;
@@ -2740,7 +2740,7 @@ footer .copyright span:last-child::after {
 .courseworks-list .coursework {
 	text-align: center;
 	margin-bottom: 1.2rem;
-	padding: 0 60px 0 60px;
+	padding: 0 5px 0 5px;
 }
 .courseworks-list .icon {
 	/* text-align: center; */
