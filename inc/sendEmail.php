@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'sebas822@tamu.edu';
+$siteOwnersEmail = 'sebvc@tamu.edu';
 
 
 if($_POST) {

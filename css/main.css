@@ -90,7 +90,19 @@ a, a:visited {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-a:hover, a:focus, a:active {
+
+a.majors, a.majors:visited {
+	color: #888888;
+	font-family: "poppins-bold", serif;
+	border-bottom: 1px ridge;
+	text-transform: uppercase;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+a:hover, a:focus, a:active, a.majors:hover, a.majors:focus, a.majors:active{
 	color: #c50000;
 	outline: 0;
 }
@@ -230,6 +242,14 @@ abbr2 {
 	/* letter-spacing: .05rem; */
 	color: #888888;
 }
+/*
+a.majors {
+	font-family: "poppins-bold", serif;
+	border-bottom: 1px ridge;
+	text-transform: uppercase;
+	
+}
+*/
 var, kbd, samp, code, pre {
 	font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
