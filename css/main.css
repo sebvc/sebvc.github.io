@@ -29,6 +29,10 @@ body {
   color: var(--seb-red);
 }
 
+.majors > a {
+  text-decoration: underline;
+}
+
 a img {
   border: none;
 }
