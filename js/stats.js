@@ -37,19 +37,42 @@ MyFunction().then(result => {
 }).then(function (csv) {
     // console.log("HELLOOOOOOOOO")
     // console.log(csv)
-    //stats.innerHTML = "<code>" + JSON.stringify(csv) + "</code>";
-    stats.innerHTML += "<div id='stat_table' class=\"row gx-5 stats-list\">";
+    // stats.innerHTML = "<code>" + JSON.stringify(csv) + "</code>";
+    
+    /*
+    stats.innerHTML += "<div id='stat_table' class=\"stats-list d-flex gap-1 flex-wrap align-content-center justify-content-center pt-2 pb-4\">";
     var stat_table = document.getElementById("stat_table");
     csv.forEach(function (row) {
-        stat_table.innerHTML += "<div class=\"col border bgrid stat p-2\">"
-            + "<div style=\"\" class=\"icon-part display-2 text-black\">" + "<i class=\"" + row.IconClass + "\"></i>" + "</div>"
-            + "<h3 class=\"stat-count display-3 fw-bolder\">" + row.Amount + "</h3>"
-            + "<h5 class=\"stat-title h5 text-uppercase fw-bolder\">" + row.Name + "</h5>"
+        stat_table.innerHTML += "<div class=\"border w-25 flex-fill bgrid stat p-2\">"
+            + "<div style=\"font-size: 5em\" class=\"icon-part text-black\">" + "<i class=\"" + row.IconClass + "\"></i>" + "</div>"
+            + "<p style=\"font-size: 3em\" class=\"stat-count fw-bolder\">" + row.Amount + "</p>"
+            + "<p class=\"stat-title h5 text-uppercase fw-bolder\">" + row.Name + "</p>"
+            + "</div>";
+    });
+    */
+    /*
+    stats.innerHTML += "<div id='stat_table' class=\"stats-list row align-content-center justify-content-center pt-2 pb-4\">";
+    var stat_table = document.getElementById("stat_table");
+    csv.forEach(function (row) {
+        stat_table.innerHTML += "<div class=\"col-sm-6 col-md-4 col-lg-2 border stat\">"
+            + "<div style=\"font-size: 4.5em\" class=\"icon-part text-black\">" + "<i class=\"" + row.IconClass + "\"></i>" + "</div>"
+            + "<p style=\"font-size: 2.5em\" class=\"h1 stat-count fw-bolder\">" + row.Amount + "</p>"
+            + "<p class=\"stat-title h5 text-uppercase fw-bolder\">" + row.Name + "</p>"
+            + "</div>";
+    });
+    */
+    stats.innerHTML += "<div id='stat_table' class=\"stats-list row align-content-center justify-content-center py-4 mb-3\">";
+    var stat_table = document.getElementById("stat_table");
+    csv.forEach(function (row) {
+        stat_table.innerHTML += "<div class=\"stat col-12 col-sm-6 col-md-4 col-lg-2\">"
+            + "<div class=\"icon-part mt-4 pt-2 mb-2\">" + "<i class=\"" + row.IconClass + "\"></i>" + "</div>"
+            + "<p class=\"stat-count h1 fw-bolder\">" + row.Amount + "</p>"
+            + "<p class=\"stat-title h5 fw-bolder\">" + row.Name + "</p>"
             + "</div>";
     });
     // Do something with the result
 }).catch(function (error) {
     // Handle the error
-    console.log("HEY SEB you have an error caught:")
+    console.log("HEY SEB you have caught an error:")
     console.log(error)
 });
