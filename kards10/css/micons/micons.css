@@ -15,6 +15,8 @@
     speak: none;
     font-style: normal;
     font-weight: normal;
+    max-block-size: 80px;
+    max-width: 150px;
     font-variant: normal;
     text-transform: none;
     line-height: 1;

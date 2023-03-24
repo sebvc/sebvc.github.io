@@ -103,6 +103,9 @@
 .text-light-grey { color: var(--seb-light-grey)!important; }
 .border-light-grey { border-color: var(--seb-light-grey)!important; }
 
+.bg-black { background-color: var(--bs-black)!important; }
+.text-black { color: var(--bs-black)!important; }
+.border-black { border-color: var(--bs-black)!important; }
 
 /* Bootsrap Colors */
 :root {
@@ -116,7 +119,7 @@
   --bs-green: #198754!important;
   --bs-teal: #20c997!important;
   --bs-cyan: #0dcaf0!important;
-  --bs-white: #fff!important;
+  --bs-white: #ffffff!important;
   --bs-gray: #6c757d!important;
   --bs-gray-dark: #343a40!important;
   --bs-primary: #0d6efd!important;
@@ -137,5 +140,6 @@
   --seb-dark-grey: #313131!important;
   --seb-off-white: #ebebeb!important;
   --seb-light-grey: #6e6e6e!important;
+  --bs-black: #000000!important;
   
 }

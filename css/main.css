@@ -1,6 +1,10 @@
 body {
   color: var(--seb-dark-grey);
 }
+
+/* ==================================================== */
+
+/* RESUME BLOCKS */
 .marker-seb-red {
   list-style-type: disc;
 }
@@ -29,7 +33,10 @@ body {
   color: var(--seb-red);
 }
 
-.majors > a {
+/* ==================================================== */
+
+/* LINKS <a> */
+.majors>a {
   text-decoration: underline;
 }
 
@@ -41,6 +48,7 @@ a {
   color: var(--seb-dark-grey);
   text-decoration: none;
 }
+
 a:active,
 a:hover {
   color: var(--seb-red);
@@ -50,7 +58,6 @@ a:hover {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 
 a:visited {
   text-decoration: none;
@@ -62,3 +69,95 @@ a:visited {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
+/* ==================================================== */
+
+/* STATS */
+#stat_table>div {
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#stat_table>.stat>.icon-part>i {
+  font-size: 4em;
+  color: var(--bs-black) !important;
+}
+
+#stat_table>.stat>.stat-count {
+  font-size: 2.5em;
+}
+
+#stat_table>.stat>.stat-title {
+  text-transform: uppercase;
+}
+
+/* Responsive borders assuming 6 items*/
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  /* for col-12
+  so 6x1:
+      #
+      #
+      #
+      #
+      #
+      #
+  */
+  #stat_table>div {
+    border-right: 0;
+  }
+}
+
+/* Small devices `-sm` (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* for col-sm-6
+  so 3x2:
+      # | #
+      # | #
+      # | #
+  */
+  #stat_table>div:nth-child(2n) {
+    /* 2n = Second Column */
+    border-right: 0;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* for col-md-4
+  so 2x3:
+      # # #
+      # # #
+  */
+  #stat_table>div:nth-child(3n) {
+    /* 3n+1 = Third Row */
+    border-right: 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px)
+
+/* and (max-width: 1199.98px) */
+  {
+
+  /* for col-lg-2
+  so 6x1:
+      # # # # # #
+  */
+  #stat_table>div:nth-child(6n) {
+    /* 3n+1 = Third Row */
+    border-right: 0;
+  }
+}
+
+/* Extra large devices (large desktops) */
+/* @media only screen and (min-width: 1200px) { } */
+/* CSS code for extra large devices */
+/* Extra extra large devices (large desktops) */
+/* @media only screen and (min-width: 1400px) { } */
+/* CSS code for extra large devices */
+/* ==================================================== */
