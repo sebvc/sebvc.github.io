@@ -95,6 +95,10 @@
 .text-dark-grey { color: var(--seb-dark-grey)!important; }
 .border-dark-grey { border-color: var(--seb-dark-grey)!important; }
 
+.bg-seb-dark { background-color: var(--seb-dark)!important; }
+.text-seb-dark { color: var(--seb-dark)!important; }
+.border-seb-dark { border-color: var(--seb-dark)!important; }
+
 .bg-off-white { background-color: var(--seb-off-white)!important; }
 .text-off-white { color: var(--seb-off-white)!important; }
 .border-off-white { border-color: var(--seb-off-white)!important; }
@@ -138,6 +142,7 @@
   --seb-dark-red: #810202!important;
   --seb-red: #c50000!important;
   --seb-dark-grey: #313131!important;
+  --seb-dark: #151515!important;
   --seb-off-white: #ebebeb!important;
   --seb-light-grey: #6e6e6e!important;
   --bs-black: #000000!important;
