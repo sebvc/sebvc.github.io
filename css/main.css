@@ -5,7 +5,8 @@
 /* ==================================================== */
 /* Main Styling */
 body {
-  background-color: var(--seb-dark);
+  /* background-color: var(--seb-dark); */
+  background-color: var(--seb-off-white);
 }
 
 /* ==================================================== */
@@ -258,6 +259,13 @@ a:visited {
 
 
 /* ==================================================== */
+
+/* Quotes */
+/* #quotes > div:nth-of-type(6)
+ {
+  background-color: yellow!important;
+  display:none;
+} */
 
 /* STATS */
 #stat_table>div {
