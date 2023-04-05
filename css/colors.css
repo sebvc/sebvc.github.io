@@ -152,4 +152,30 @@
   --seb-off-white: #ebebeb!important;
   --bs-black: #000000!important;
   
+  /* Custom transparency Colors */
+  --seb-dark-red-bb:   #810202bb!important;
+  --seb-dark-red-7f:   #81020274!important;
+  --seb-dark-red-33:   #81020233!important;
+  --seb-red-bb:        #c50000bb!important;
+  --seb-red-7f:        #c5000074!important;
+  --seb-red-33:        #c5000033!important;
+  --seb-dark-grey-bb:  #313131bb!important;
+  --seb-dark-grey-7f:  #31313174!important;
+  --seb-dark-grey-33:  #31313133!important;
+  --seb-grey-bb:       #6e6e6ebb!important;
+  --seb-grey-7f:       #6e6e6e74!important;
+  --seb-grey-33:       #6e6e6e33!important;
+  --seb-light-grey-bb: #a1a1a1bb!important;
+  --seb-light-grey-7f: #a1a1a174!important;
+  --seb-light-grey-33: #a1a1a133!important;
+  --seb-dark-bb:       #151515bb!important;
+  --seb-dark-7f:       #15151574!important;
+  --seb-dark-33:       #15151533!important;
+  --seb-off-white-bb:  #ebebebbb!important;
+  --seb-off-white-7f:  #ebebeb74!important;
+  --seb-off-white-33:  #ebebeb33!important;
+  --bs-black-bb:       #000000bb!important;
+  --bs-black-7f:       #00000074!important;
+  --bs-black-33:       #00000033!important;
+  
 }
