@@ -107,6 +107,7 @@ body *{
 
 .intro-body,
 #intro {
+  /* parallax scrolling */
   background: transparent url(../../images/Royal_Castle_Building_2.jpg) no-repeat center bottom;
   background-image: url(../../images/Royal_Castle_Building_2.jpg);
   -webkit-background-size: cover;
@@ -601,13 +602,17 @@ a:visited {
 #contact .form-floating textarea,
 /* main textarea body */
 #contact .form-floating input
-
 /* main input body */
   {
   color: var(--seb-off-white);
   background-color: var(--seb-dark-grey);
   border: var(--bs-border-width) none var(--seb-dark);
 }
+
+/* #contact .form-floating textarea {
+  height: fit-content;
+  min-height: 10rem;
+} */
 
 #contact .form-floating textarea:focus,/* main textarea body */
 #contact .form-floating input:focus /* main input body */
@@ -616,14 +621,49 @@ a:visited {
 }
 
 /*body area behind */
+#contact .form-floating label.error,
+#contact .error::after {
+  text-align: right;
+  width:100%;
+  color: var(--seb-red)!important;
+  background-color: transparent!important;
+}
+
 #contact .form-floating label,
-#contact .form-floating:not(.form-control:disabled)::before {
-  color: var(--seb-off-white);
-  background-color: transparent;
+#contact .form-floating:not(.form-control:disabled)::before, 
+#contact .form-label::after {
+  
+  color: var(--seb-off-white-7f)!important;
+  background-color: transparent!important;
   pointer-events: none; /* makes floating label non interactive, To make full input element selectable */
   border: var(--bs-border-width) none var(--seb-dark);
 }
 #contact .form-floating input:-internal-autofill-selected + label
 {
   color: var(--seb-dark);
+}
+
+#message-warning, #message-success {
+	display: none;
+	background: #0d0d0d;
+	border-radius: 3px;
+	padding: 3rem;
+	margin-bottom: 3.6rem;
+	width: 100%;
+}
+#message-warning {
+	color: #fa0003;
+}
+#message-success {
+	color: #c50000;
+}
+#message-warning i, #message-success i {
+	margin-right: 10px;
+}
+#submit-loader .text-loader {
+	display: none;
+	font-family: "poppins-bold", sans-serif;
+	color: #FFFFFF;
+	letter-spacing: .3rem;
+	text-transform: uppercase;
 }
