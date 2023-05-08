@@ -1,0 +1,198 @@
+/* Bootstrap Colors */
+.bg-blue { background-color: var(--bs-blue)!important; }
+.text-blue { color: var(--bs-blue)!important; }
+.border-blue { border-color: var(--bs-blue)!important; }
+
+.bg-indigo { background-color: var(--bs-indigo)!important; }
+.text-indigo { color: var(--bs-indigo)!important; }
+.border-indigo { border-color: var(--bs-indigo)!important; }
+
+.bg-purple { background-color: var(--bs-purple)!important; }
+.text-purple { color: var(--bs-purple)!important; }
+.border-purple { border-color: var(--bs-purple)!important; }
+
+.bg-pink { background-color: var(--bs-pink)!important; }
+.text-pink { color: var(--bs-pink)!important; }
+.border-pink { border-color: var(--bs-pink)!important; }
+
+.bg-red { background-color: var(--bs-red)!important; }
+.text-red { color: var(--bs-red)!important; }
+.border-red { border-color: var(--bs-red)!important; }
+
+.bg-orange { background-color: var(--bs-orange)!important; }
+.text-orange { color: var(--bs-orange)!important; }
+.border-orange { border-color: var(--bs-orange)!important; }
+
+.bg-yellow { background-color: var(--bs-yellow)!important; }
+.text-yellow { color: var(--bs-yellow)!important; }
+.border-yellow { border-color: var(--bs-yellow)!important; }
+
+.bg-green { background-color: var(--bs-green)!important; }
+.text-green { color: var(--bs-green)!important; }
+.border-green { border-color: var(--bs-green)!important; }
+
+.bg-teal { background-color: var(--bs-teal)!important; }
+.text-teal { color: var(--bs-teal)!important; }
+.border-teal { border-color: var(--bs-teal)!important; }
+
+.bg-cyan { background-color: var(--bs-cyan)!important; }
+.text-cyan { color: var(--bs-cyan)!important; }
+.border-cyan { border-color: var(--bs-cyan)!important; }
+
+.bg-white { background-color: var(--bs-white)!important; }
+.text-white { color: var(--bs-white)!important; }
+.border-white { border-color: var(--bs-white)!important; }
+
+.bg-gray { background-color: var(--bs-gray)!important; }
+.text-gray { color: var(--bs-gray)!important; }
+.border-gray { border-color: var(--bs-gray)!important; }
+
+.bg-gray-dark { background-color: var(--bs-gray-dark)!important; }
+.text-gray-dark { color: var(--bs-gray-dark)!important; }
+.border-gray-dark { border-color: var(--bs-gray-dark)!important; }
+
+.bg-primary { background-color: var(--bs-primary)!important; }
+.text-primary { color: var(--bs-primary)!important; }
+.border-primary { border-color: var(--bs-primary)!important; }
+
+.bg-secondary { background-color: var(--bs-secondary)!important; }
+.text-secondary { color: var(--bs-secondary)!important; }
+.border-secondary { border-color: var(--bs-secondary)!important; }
+
+.bg-success { background-color: var(--bs-success)!important; }
+.text-success { color: var(--bs-success)!important; }
+.border-success { border-color: var(--bs-success)!important; }
+
+.bg-info { background-color: var(--bs-info)!important; }
+.text-info { color: var(--bs-info)!important; }
+.border-info { border-color: var(--bs-info)!important; }
+
+.bg-warning { background-color: var(--bs-warning)!important; }
+.text-warning { color: var(--bs-warning)!important; }
+.border-warning { border-color: var(--bs-warning)!important; }
+
+.bg-danger { background-color: var(--bs-danger)!important; }
+.text-danger { color: var(--bs-danger)!important; }
+.border-danger { border-color: var(--bs-danger)!important; }
+
+.bg-light { background-color: var(--bs-light)!important; }
+.text-light { color: var(--bs-light)!important; }
+.border-light { border-color: var(--bs-light)!important; }
+
+.bg-dark { background-color: var(--bs-dark)!important; }
+.text-dark { color: var(--bs-dark)!important; }
+.border-dark { border-color: var(--bs-dark)!important; }
+
+.bg-dark-red { background-color: var(--seb-dark-red)!important; }
+.text-dark-red { color: var(--seb-dark-red)!important; }
+.border-dark-red { border-color: var(--seb-dark-red)!important; }
+
+.bg-seb-red { background-color: var(--seb-red)!important; }
+.text-seb-red { color: var(--seb-red)!important; }
+.border-seb-red { border-color: var(--seb-red)!important; }
+
+.bg-light-red { background-color: var(--seb-light-red)!important; }
+.text-light-red { color: var(--seb-light-red)!important; }
+.border-light-red { border-color: var(--seb-light-red)!important; }
+
+.bg-dark-grey { background-color: var(--seb-dark-grey)!important; }
+.text-dark-grey { color: var(--seb-dark-grey)!important; }
+.border-dark-grey { border-color: var(--seb-dark-grey)!important; }
+
+.bg-grey { background-color: var(--seb-grey)!important; }
+.text-grey { color: var(--seb-grey)!important; }
+.border-grey { border-color: var(--seb-grey)!important; }
+
+.bg-light-grey { background-color: var(--seb-light-grey)!important; }
+.text-light-grey { color: var(--seb-light-grey)!important; }
+.border-light-grey { border-color: var(--seb-light-grey)!important; }
+
+.bg-seb-dark { background-color: var(--seb-dark)!important; }
+.text-seb-dark { color: var(--seb-dark)!important; }
+.border-seb-dark { border-color: var(--seb-dark)!important; }
+
+.bg-off-white { background-color: var(--seb-off-white)!important; }
+.text-off-white { color: var(--seb-off-white)!important; }
+.border-off-white { border-color: var(--seb-off-white)!important; }
+
+.bg-black { background-color: var(--bs-black)!important; }
+.text-black { color: var(--bs-black)!important; }
+.border-black { border-color: var(--bs-black)!important; }
+
+/* Bootsrap Colors */
+:root {
+  --bs-blue: #0d6efd!important;
+  --bs-indigo: #6610f2!important;
+  --bs-purple: #6f42c1!important;
+  --bs-pink: #d63384!important;
+  --bs-red: #dc3545!important;
+  --bs-orange: #fd7e14!important;
+  --bs-yellow: #ffc107!important;
+  --bs-green: #198754!important;
+  --bs-teal: #20c997!important;
+  --bs-cyan: #0dcaf0!important;
+  --bs-white: #ffffff!important;
+  --bs-gray: #6c757d!important;
+  --bs-gray-dark: #343a40!important;
+  --bs-primary: #0d6efd!important;
+  --bs-secondary: #6c757d!important;
+  --bs-success: #198754!important;
+  --bs-info: #0dcaf0!important;
+  --bs-warning: #ffc107!important;
+  --bs-danger: #dc3545!important;
+  --bs-light: #f8f9fa!important;
+  --bs-dark: #212529!important;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"!important;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace!important;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))!important;
+
+  /* Custom Colors */
+  --seb-dark-red: #810202!important;
+  --seb-red: #c50000!important;
+  --seb-light-red: #fa0003!important;
+  --seb-dark-grey: #313131!important;
+  --seb-grey: #6e6e6e!important;
+  --seb-light-grey: #a1a1a1!important;
+  --seb-dark: #151515!important;
+  --seb-off-white: #ebebeb!important;
+  --bs-black: #000000!important;
+  
+  /* Custom transparency Colors */
+  --seb-dark-red-bb:   #810202bb!important;
+  --seb-dark-red-74:   #81020274!important;
+  --seb-dark-red-55:   #81020255!important;
+  --seb-dark-red-33:   #81020233!important;
+  --seb-red-bb:        #c50000bb!important;
+  --seb-red-74:        #c5000074!important;
+  --seb-red-55:        #c5000055!important;
+  --seb-red-33:        #c5000033!important;
+  --seb-light-red-bb:  #810202bb!important;
+  --seb-light-red-74:  #81020274!important;
+  --seb-light-red-55:  #81020255!important;
+  --seb-light-red-33:  #81020233!important;
+  --seb-dark-grey-bb:  #313131bb!important;
+  --seb-dark-grey-74:  #31313174!important;
+  --seb-dark-grey-55:  #31313155!important;
+  --seb-dark-grey-33:  #31313133!important;
+  --seb-grey-bb:       #6e6e6ebb!important;
+  --seb-grey-74:       #6e6e6e74!important;
+  --seb-grey-55:       #6e6e6e55!important;
+  --seb-grey-33:       #6e6e6e33!important;
+  --seb-light-grey-bb: #a1a1a1bb!important;
+  --seb-light-grey-74: #a1a1a174!important;
+  --seb-light-grey-55: #a1a1a155!important;
+  --seb-light-grey-33: #a1a1a133!important;
+  --seb-dark-bb:       #151515bb!important;
+  --seb-dark-74:       #15151574!important;
+  --seb-dark-55:       #15151555!important;
+  --seb-dark-33:       #15151533!important;
+  --seb-off-white-bb:  #ebebebbb!important;
+  --seb-off-white-74:  #ebebeb74!important;
+  --seb-off-white-55:  #ebebeb55!important;
+  --seb-off-white-33:  #ebebeb33!important;
+  --bs-black-bb:       #000000bb!important;
+  --bs-black-74:       #00000074!important;
+  --bs-black-55:       #00000055!important;
+  --bs-black-33:       #00000033!important;
+  
+}

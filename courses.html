@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!-- Icons -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" /> -->
+  <script src="https://kit.fontawesome.com/1613f80fc9.js" crossorigin="anonymous"></script>
+
+  <!-- STAT-specific JS files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+    integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.rawgit.com/Keyang/node-csvtojson/d41f44aa/browser/csvtojson.min.js"></script>
+  <script src="js/stats.js"></script>
+
+  <!-- Quote JS -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Seb&#8614; Stats</title><!-- (&#8614;) is (↦) -->
+
+  <!-- favicons -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+
+  <!-- Page Section Intro -->
+  <div class="container-fluid px-0 pt-3 pb-1 bg-black text-light-grey text-center">
+    <section id="statsss" class="grey-section">
+      <h5 class="text-seb-red text-uppercase">Coursework</h5>
+      <h2>My Academic Concentrations</h2>
+      <!-- <p class="lead text-wrap text-light px-3">Seeking Full-Time Opportunities in Dynamic Robotics Applications and Interdisciplinary Engineering</p> -->
+      <p class="h5 text-wrap"><a href="pdfs/sebvc_Unofficial_Transcript.pdf" target="_blank"
+          rel="noopener noreferrer">Refer to my Unofficial Transcript here
+          <i class="fa-solid fa-file-pdf"></i></a></p>
+  </div>
+  <!-- /section-intro-->
+
+  <!-- Courswork Section
+        ================================================== -->
+  <section id="courses">
+    <div class="container-fluid text-light-grey text-center bg-black">
+      <div class="container">
+        <p class="display px-md-5">Through Interdisciplinary Engineering and my Undergraduate Career, I have been
+          fortunate
+          enough to blend coursework from multiple departments to specialize my degree of focus to the core aspects of
+          Robotics and its Applications.</p>
+
+        <div class="accordion text-start pb-4" id="accordionCourses">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseMechanics" aria-expanded="false" aria-controls="flush-collapseMechanics">
+                Mechanics & Design
+              </button>
+            </h2>
+            <div id="flush-collapseMechanics" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+              <div class="accordion-body">
+                <table class="table table-hover align-middle">
+                  <thead>
+                    <tr> <th>Course Code</th> <th>Course Name</th> <th class="d-none d-md-table-cell">Comments</th> <th class="d-none d-sm-table-cell">From</th> </tr>
+                  </thead>
+                  <tbody class="table-group-divider">
+                    <tr> <td>MMET 275</td>     <td>Mechanics for Technologists</td>                                                           <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MMET 207</td>     <td>Metallic Materials</td>                                                                    <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MEEN 210</td>     <td>Geometric Modeling for Mechanical Design <i class="fa-solid fa-arrow-pointer"></i></td>    <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MEEN 225</td>     <td>Engineering Mechanics</td>                                                                 <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MEEN 260</td>     <td>Mechanical Measurements</td>                                                               <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MEEN 305</td>     <td>Solid Mechanics</td>                                                               <td class="d-none d-md-table-cell">Special Topics:  <span class="text-nowrap">MEEN 489</span></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseElectronics" aria-expanded="false"
+                aria-controls="flush-collapseElectronics">
+                Electronics
+              </button>
+            </h2>
+            <div id="flush-collapseElectronics" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+              <div class="accordion-body">
+                <table class="table table-hover">
+                  <thead>
+                    <tr> <th>Course Code</th> <th>Course Name</th> <th class="d-none d-md-table-cell">Comments</th> <th class="d-none d-sm-table-cell">From</th> </tr>
+                  </thead>
+                  <tbody>
+                    <tr> <td>ESET 210</td>     <td>Circuit Analysis</td>                        <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>ESET 219</td>     <td>Digital Electronics</td>                     <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>ECEN 214</td>     <td>Electrical Circuit Theory</td>               <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>ECEN 248</td>     <td>Introduction to Digital Systems Design</td>  <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>ECEN 350</td>     <td>Computer Architecture and Design</td>        <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>ECEN 441</td>     <td>Electronic Motor Drives</td>                 <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>ECEN 460</td>     <td>Power System Operation and Control</td>      <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>ECEN 325</td>     <td>Electronics</td>            <td class="d-none d-md-table-cell">Honors Section</td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseProgramming" aria-expanded="false"
+                aria-controls="flush-collapseProgramming">
+                Computer Science
+              </button>
+            </h2>
+            <div id="flush-collapseProgramming" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+              <div class="accordion-body">
+                <table class="table table-hover">
+                  <thead>
+                    <tr> <th>Course Code</th> <th>Course Name</th> <th class="d-none d-md-table-cell">Comments</th> <th class="d-none d-sm-table-cell">From</th> </tr>
+                  </thead>
+                  <tbody>
+                    <tr> <td>ESET 269</td>    <td>Embedded Systems Development in C</td>                                            <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>CSCE 121</td>    <td>Introduction to Program Design and Concepts</td>                                  <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MEEN 357</td>    <td>Engineering Analysis: Numerical Methods <i class="fa-brands fa-python"></i></td>   <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>CSCE 221</td>    <td>Data Structures and Algorithms</td>                                               <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>CSCE 222</td>    <td>Discrete Structures for Computing</td>                                            <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>CSCE 313</td>    <td>Introduction to Computer Systems</td>                                             <td class="d-none d-md-table-cell">Honors Section</td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseDynamics" aria-expanded="false" aria-controls="flush-collapseDynamics">
+                Dynamics & Controls
+              </button>
+            </h2>
+            <div id="flush-collapseDynamics" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+              <div class="accordion-body">
+                <table class="table table-hover">
+                  <thead>
+                    <tr> <th>Course Code</th> <th>Course Name</th> <th class="d-none d-md-table-cell">Comments</th> <th class="d-none d-sm-table-cell">From</th> </tr>
+                  </thead>
+                  <tbody>
+                    <tr> <td>MXET 375</td>    <td>Applied Dynamic Systems</td>                                      <td class="d-none d-md-table-cell">Honors Section</td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>ECEN 314</td>    <td>Singnals and Systems <i class="fa-solid fa-wave-square"></i></td> <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MEEN 363</td>    <td>Dynamics and Vibrations</td>                                      <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MEEN 364</td>    <td>Dynamic Systems and Controls</td>                                 <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MEEN 408</td>    <td>Mechanics of Robotic Manipulators</td>                            <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MXET 300</td>    <td>Mechatronics I - Mobile Robotic Systems</td>                                      <td class="d-none d-md-table-cell">Honors Section</td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MEEN 667</td>    <td>Mechatronics</td>                            <td class="d-none d-md-table-cell">Graduate Section of <span class="text-nowrap">MEEN 443</span></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MXET 300</td>    <td>Mechatronics II - Industrial Robotic Systems</td>                                      <td class="d-none d-md-table-cell">Lab Audit, Same Lecture as <span class="text-nowrap">MEEN 408</span></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MEEN 431</td>    <td>Advanced System Dynamics and Controls</td>                        <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOther" aria-expanded="false" aria-controls="flush-collapseOther">
+                Other
+              </button>
+            </h2>
+            <div id="flush-collapseOther" class="accordion-collapse collapse" data-bs-parent="#accordionCourses">
+              <div class="accordion-body">
+                <table class="table table-hover align-top">
+                  <thead>
+                    <tr> <th>Course Code</th> <th>Course Name</th> <th class="d-none d-md-table-cell">Comments</th> <th class="d-none d-sm-table-cell">From</th> </tr>
+                  </thead>
+                  <tbody>
+                    <tr> <td>AP CALC</td>     <td>AP Calculus BC</td>                          <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">AHS</td> </tr>
+                    <tr> <td>IB MATH</td>     <td>IB HL MATH</td>                          <td class="d-none d-md-table-cell">Paper 3: Calculus</td> <td class="d-none d-sm-table-cell">AHS</td> </tr>
+                    <tr> <td>AP PHYS</td>     <td>AP Physics 1, 2, & C</td>                          <td class="d-none d-md-table-cell">Mechanics and Electricity & Magnetism</td> <td class="d-none d-sm-table-cell">AHS</td> </tr>
+                    <tr> <td>PSYC 107</td>    <td>Introduction to Psychology</td>                          <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MATH 251</td>    <td>Engineering Mathematics III</td>  <td class="d-none d-md-table-cell">Multivariable Calculus</td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>PHYS 221</td>    <td>Optics and Thermal Physics</td>                          <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MATH 308</td>    <td>Differential Equations</td>  <td class="d-none d-md-table-cell">Honors Section</td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>STAT 211</td>    <td>Principles of Statistics I</td>            <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MEEN 315</td>    <td>Principles of Thermodynamics</td>            <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                    <tr> <td>MATH 2418</td>   <td>Linear Algebra</td>                          <td class="d-none d-md-table-cell"></td> <td class="d-none d-sm-table-cell">DCCCD</td> </tr>
+                    <tr> <td>ENGR 291</td>    <td>NeuroErgonomics Undergraduate Research</td>            <td class="d-none d-md-table-cell">LEARNER Project</td> <td class="d-none d-sm-table-cell">TAMU</td> </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
