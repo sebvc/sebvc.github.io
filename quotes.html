@@ -8,119 +8,65 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- Icons -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" /> -->
     <script src="https://kit.fontawesome.com/1613f80fc9.js" crossorigin="anonymous"></script>
-
-    <!-- STAT-specific JS files -->
-    <script src="js/quotes.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Seb&#8614; Quotes</title><!-- (&#8614;) is (↦) -->
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
 
     <!-- favicons -->
     <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="js/includeHTMLsnip.js"></script>
+    <title>Seb&#8614; Quotes</title><!-- (&#8614;) is (↦) -->
+    <style>
+        /* to replace default section intro promt bc all quotes are shown */
+        #sayings {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Page Section Intro -->
-    <div class="container-fluid bg-dark-red px-0 pt-3 pb-2 text-off-white text-center">
-        <section id="sayings" class="grey-section">
+    <!-- <section id="nav_sec" class="" include-html-snippet="content\nav.html"></section> -->
+    <section id="sayings2">
+        <div class="container-fluid bg-dark-red px-0 py-5 text-off-white text-center">
             <!-- <h5 class="text-black text-uppercase">Quotes</h5> -->
             <h2>Enjoy a few wise words</h2>
-            <span class="lead text-wrap px-3">Feel free to refresh the page for more. </span>
-
-    </div>
-    <!-- /section-intro-->
-
-    <div class="container-fluid pe-1 text-off-white text-center bg-dark-red">
-        <div id="quotes" class="d-block container py-2">
-            <!-- <p class="lead">
-            Enjoy a few quotes. Feel free to refresh the page.
-        </p> -->
-            <div class="card"> <!-- Quote 1 -->
-                <div class="card-body pt-4 bg-off-white rounded">
-                    <blockquote class="blockquote text-dark mb-0  d-flex justify-content-center">
-                        <i class="fa-solid fa-quote-left pe-2 align-self-start"></i>
-                        <p class="align-self-end user-select-all" style="font-family: poppins-regular;">
-                            If you're always on time, it implies that you never have anything better you should be
-                            doing.
-                        </p>
-                        <i class="fa-solid fa-quote-right ps-2 align-self-start"></i>
-                    </blockquote>
-                    <footer class="blockquote-footer text-end user-select-all">Kelsier, Brandon Sanderson, <cite
-                            title="Mistborn: The Final Empire">Mistborn: The Final Empire</cite></footer>
-                </div>
-            </div>
-            <div class="card border-0"> <!-- Quote 2 -->
-                <div class="card-body pt-4 bg-dark-red">
-                    <blockquote class="blockquote text-off-white mb-0  d-flex justify-content-center">
-                        <i class="fa-solid fa-quote-left pe-2 align-self-start"></i>
-                        <p class="align-self-end user-select-all" style="font-family: poppins-extralight;">
-                            The purpose of a storyteller is not to tell you how to think, but to give you questions to
-                            think upon. Too often, we forget that.
-                        </p>
-                        <i class="fa-solid fa-quote-right ps-2 align-self-start"></i>
-                    </blockquote>
-                    <footer class="blockquote-footer text-off-white text-end user-select-all">Brandon Sanderson, <cite
-                            title="Way of Kings">Way of Kings</cite>
-                    </footer>
-                </div>
-            </div>
-            <div class="card"> <!-- Quote 3 -->
-                <div class="card-body pt-4 bg-off-white rounded">
-                    <blockquote class="blockquote text-dark mb-0  d-flex justify-content-center">
-                        <i class="fa-solid fa-quote-left pe-2 align-self-start"></i>
-                        <p class="align-self-end user-select-all" style="font-family: poppins-regular;">
-                            You got the makings of greatness in you, but you got to take the helm and chart your own
-                            course! Stick to it, no matter the squalls! And
-                            when the time comes, you'll get the chance to really test the cut of your sails and show
-                            what you're made
-                            of! And well, I hope I'm there, catching some of the light coming off you that day.
-                        </p>
-                        <i class="fa-solid fa-quote-right ps-2 align-self-start"></i>
-                    </blockquote>
-                    <footer class="blockquote-footer text-end user-select-all">John Silver, <cite
-                            title="Treasure Planet">Treasure
-                            Planet</cite>
-                    </footer>
-                </div>
-            </div>
-            <div class="card border-0"> <!-- Quote 4 -->
-                <div class="card-body pt-4 bg-dark-red">
-                    <blockquote class="blockquote text-off-white mb-0  d-flex justify-content-center">
-                        <i class="fa-solid fa-quote-left pe-2 align-self-start"></i>
-                        <p class="align-self-end user-select-all" style="font-family: poppins-extralight;">
-                            I'm acting like someone who is starting to realize who he is and what he can do.
-                        </p>
-                        <i class="fa-solid fa-quote-right ps-2 align-self-start"></i>
-                    </blockquote>
-                    <footer class="blockquote-footer text-off-white text-end user-select-all">John Smith, Pittacus Lore,
-                        <cite title="I Am Number Four">I Am Number Four</cite>
-                    </footer>
-                </div>
-            </div>
-            <div class="card"> <!-- Quote 5 -->
-                <div class="card-body pt-4 bg-off-white rounded align-items-center">
-                    <blockquote class="blockquote text-dark mb-0  d-flex justify-content-center">
-                        <i class="fa-solid fa-quote-left pe-2 align-self-start"></i>
-                        <p class="align-self-end user-select-all" style="font-family: poppins-regular;">
-                            The key to immortality is first living a life worth remembering.
-                        </p>
-                        <i class="fa-solid fa-quote-right ps-2 align-self-start"></i>
-                    </blockquote>
-                    <footer class="blockquote-footer text-end user-select-all">Bruce Lee</footer>
-                </div>
-            </div>
+            <span class="lead text-wrap px-3">I wanted to share some amazing quotes I've come across over the course of my life.<br> I just don't think they are shared enough, enjoy! </span>
         </div>
-    </div>
-
+    </section>
+    <section id="quotes_sec" class="" include-html-snippet="content\quotes.html"></section>
+        <div class="container-fluid bg-dark-red px-0 py-4">
+            <!-- <h5 class="text-black text-uppercase">Quotes</h5> -->
+        </div>
+    
+    <!-- <section id="footer_sec" class="" include-html-snippet="content\footer.html"></section> -->
     <script>
-        selectQuote();
+        includeHTMLSnippet();
     </script>
+    <!-- JQ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+        integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JS - quotes -->
+    <script src="js/quotes.js"></script>
+    <!-- <script>
+        // toggleQuotes();
+        setTimeout(() => {
+            selectQuote();
+        }, 1000);
+    </script> -->
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+
+</body>
 
 </html>

@@ -29,21 +29,21 @@ function run_stats() {
     const num = icons.length;
     const num2 = values.length;
     const num3 = titles.length;
-    console.log(num)
+    // console.log(num)
 
     for (let i = 0; i < num; i++) {
       /* console.log(values[i].innerHTML); */
-      console.log(icons[i].innerHTML);
-      console.log(csv[i].IconHTML);
-      console.log(values[i].innerHTML);
-      console.log(titles[i].innerHTML);
+      // console.log(icons[i].innerHTML);
+      // console.log(csv[i].IconHTML);
+      // console.log(values[i].innerHTML);
+      // console.log(titles[i].innerHTML);
       icons[i].innerHTML = csv[i].IconHTML;
       values[i].innerHTML = csv[i].Amount;
       titles[i].innerHTML = csv[i].Name;
     }
     // return Promise.resolve("stat_table Updated");
     /* csv.forEach(function (row) {
-        console.log(row.Name);
+        // console.log(row.Name);
         // stat_table.innerHTML += "<div class=\"stat col-12 col-sm-6 col-md-4 col-lg-2\">"
         //     + "<div class=\"icon-part mt-4 pt-2 mb-2\">" + "<i class=\"" + row.IconClass + "\"></i>" + "</div>"
         //     + "<p class=\"stat-count h1 fw-bolder\">" + row.Amount + "</p>"
@@ -72,7 +72,7 @@ function run_stats() {
 
       //   }, 1000) 
       // }
-      console.log(stats_block)
+      // console.log(stats_block)
       stats_block.classList.toggle("d-none");
       stats_block.classList.toggle("d-block");
     }
