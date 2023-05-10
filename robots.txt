@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /images/
+Disallow: /kards10/
+Disallow: /pdfs/
+Disallow: /php/
+Allow: /index.html
+Allow: /howdy.html
+Allow: /contact.html
+Allow: /courses.html
+Allow: /portfolio.html
+Allow: /quotes.html
+Allow: /resume.html
+Allow: /stats.html
+Allow: /content/
