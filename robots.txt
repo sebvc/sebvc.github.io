@@ -15,3 +15,4 @@ Allow: /quotes.html
 Allow: /resume.html
 Allow: /stats.html
 Allow: /content/
+Sitemap: http://people.tamu.edu/~sebvc/sitemap.xml
