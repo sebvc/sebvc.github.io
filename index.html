@@ -2,63 +2,373 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<meta charset="utf-8" />
 
-    <!-- Icons -->
-    <script src="https://kit.fontawesome.com/1613f80fc9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+	<meta name="description" content="Sebastian Villa's Personal Website & Portfolio">
+	<meta name="author" content="Sebastian Villa Cuellar">
+	<link rel="image_src" href="images/sebvcWebThumbnail.png" /> <!-- Image Thumbnail -->
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <title>sebvc's Portfolio</title>
+	<!-- HTML Meta Tags
+   ================================================== -->
+	<!-- Google / Search Engine Tags -->
+	<meta itemprop="name" content="sebvc's Portfolio">
+	<meta itemprop="description" content="Sebastian Villa's Personal Website & Portfolio">
+	<meta itemprop="image" content="images/sebvcWebThumbnail.png">
+	<meta name="google-site-verification" content="NNNcx4XFYZS6DsyttgkalHVpuSMOYTthsMq_pOI5W2s" />
 
-    <!-- JS -->
-    <script src="js/includeHTMLsnip.js"></script>
-    <script src="js/quotes.js"></script>
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="http://people.tamu.edu/~sebvc">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="sebvc's Portfolio">
+	<meta property="og:description" content="Sebastian Villa's Personal Website & Portfolio">
+	<meta property="og:image" content="images/sebvcWebThumbnail.png">
 
-    <!-- favicons -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="sebvc's Portfolio">
+	<meta name="twitter:description" content="Sebastian Villa's Personal Website & Portfolio">
+	<meta name="twitter:image" content="images/sebvcWebThumbnail.png">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+	<!-- Icons -->
+	<script src="https://kit.fontawesome.com/1613f80fc9.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+
+	<!-- Fonts -->
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
+
+	<!-- favicons -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+	<script src="js/includeHTMLsnip.js" type="text/javascript"></script>
+	<title>sebvc's Portfolio</title>
 </head>
 
 <body>
-    <!-- <div class="" include-html-snippet="nav.html"></div> -->
-    <div class="position-absolute " style="min-height:100%; min-width:100%; z-index:-1;">
-        <img src="images/Royal_Castle_Building_2.jpg" class="position-fixed bottom-0 intro-img img-fluid " style="min-height: 100%; min-width: 100%; z-index: -1; object-fit: cover; ">
-    </div>
-    <div id="intro_sec" class="" include-html-snippet="intro.html"></div>
-    <div id="about_sec" class="" include-html-snippet="about.html"></div>
-    <div id="resume_sec" class="" include-html-snippet="resume.html"></div>
-    <!-- <div class="portfolio_sec" include-html-snippet="portfolio.html"></div> -->
-    <div class="courses_sec" include-html-snippet="courses.html"></div>
-    <div id="quote_sec" class="" include-html-snippet="quotes.html"></div>
-    <div id="stat_sec" class="" include-html-snippet="stats.html"></div>
-    <!-- <div class="" include-html-snippet="globe.html"></div> -->
-    <!-- <div id="contact_sec" class="" include-html-snippet="contact.html"></div> -->
-    <!-- <div class="" include-html-snippet="footer.html"></div> -->
+	<!-- <section id="nav_sec" class="" include-html-snippet="content\nav.html"></section> -->
+	<div class="position-absolute " style="min-height:100%; min-width:100%; z-index:-1;">
+		<img src="images/Royal_Castle_Building_2.jpg" alt="Red Brick Castle parallax background in Tokyo"
+			class="position-fixed bottom-0 intro-img img-fluid "
+			style="min-height: 100%; min-width: 100%; z-index: -1; object-fit: cover; ">
+	</div>
+	<section id="intro_sec" class="" include-html-snippet="content\intro.html"></section>
+	<section id="about_sec" class="" include-html-snippet="content\about.html"></section>
+	<section id="resume_sec" class="" include-html-snippet="content\resume.html"></section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
-            integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        includeHTMLSnippet();
-        // toggleStats();
-        // toggleQuotes();
-        setTimeout(() => {
-            run_stats();
-            selectQuote();
-        }, 1000);
-    </script>
-    <!-- STAT-specific JS files -->
-    <script src="https://cdn.rawgit.com/Keyang/node-csvtojson/d41f44aa/browser/csvtojson.min.js"></script>
-    <script src="js/stats.js"></script>
+	<!-- Not included snipet bc it has problems sometimes reloading or first loading with masonry -->
+	<!-- <section id="portfolio_sec" class="" include-html-snippet="content\portfolio.html"></section> -->
+	<section id="portfolio_sec" class="">
+		<!-- Portfolio Section
+   ================================================== -->
+		<!-- Page Section Intro -->
+		<section id="portfolio">
+			<div class="container-fluid px-0 pb-3 bg-white text-center">
+				<div class="container-fluid px-3 pt-3 pb-2 bg-white">
+					<h5 class="text-seb-red text-uppercase">Project Portfilio</h5>
+					<h2>Check Out Some of My Personal Projects</h2>
+					<p class="lead text-wrap px-3">This is where I add bits about the multiple projects I am curently
+						working on or
+						have
+						completed.</p>
+					<p class="text-wrap small px-5"> The random pictures are Placeholders that will be replaced as more
+						projects are
+						brought into fruition.</p>
+				</div> <!-- /section-intro-->
+				<div id="portfolio-grid" class="container-fluid bg-white">
+					<div class="container-lg ">
+						<div class="row" data-masonry='{"percentPosition": true }' style="min-height: 790px;">
+							<div class="col-sm-6 col-lg-4 p-0 m-0">
+								<div class="card rounded-0 text-bg-dark border-0">
+									<img src="images/portfolio/ukeA.jpg" class="card-img rounded-0"
+										alt="Ukelele Asistant Project">
+									<div class="card-img-overlay rounded-0">
+										<h5 class="card-title">Ukelele Assist</h5>
+										<p class="card-text">Howdy Hack 2021 Hackathon</p>
+									</div>
+								</div>
+							</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-            crossorigin="anonymous"></script>
+							<div class="col-sm-6 col-lg-4 p-0 m-0">
+								<div class="card rounded-0 text-bg-dark border-0">
+									<img src="images/portfolio/mxetScuttle.jpg" class="card-img rounded-0"
+										alt="Scuttle Robot for MXET300">
+									<div class="card-img-overlay rounded-0">
+										<h5 class="card-title">SCUTTLE Soccer</h5>
+										<p class="card-text">Fall 2022 MXET 300 Final Project</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-lg-4 p-0 m-0">
+								<div class="card rounded-0 text-bg-dark border-0">
+									<img src="images/portfolio/mxetUR.jpg" class="card-img rounded-0" alt="">
+									<div class="card-img-overlay rounded-0">
+										<h5 class="card-title">UR3e Programming</h5>
+										<p class="card-text">Spring 2023 MXET 400</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-lg-4 p-0 m-0">
+								<div class="card rounded-0 text-bg-dark border-0">
+									<img src="images/portfolio/zoomRainier.jpg" class="card-img rounded-0" alt="">
+									<div class="card-img-overlay rounded-0">
+										<h5 class="card-title">Mt. Rainier</h5>
+										<p class="card-text">Lorem Picsum</p>
+										<p class="card-text"><small>Credits Me</small></p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-lg-4 p-0 m-0">
+								<div class="card rounded-0 text-bg-dark border-0">
+									<img src="images/portfolio/pirateHK.jpg" class="card-img rounded-0" alt="">
+									<div class="card-img-overlay rounded-0">
+										<h5 class="card-title">Hong Kong Pirates</h5>
+										<p class="card-text">Lorem Picsum</p>
+										<p class="card-text"><small>Credits Me</small></p>
+									</div>
+								</div>
+							</div>
+							<!-- 
+			<div class="col-sm-6 col-lg-4 p-0 m-0">
+			  <div class="card rounded-0 text-bg-dark border-0">
+				<img src="images/portfolio/portraitRainier.jpg" class="card-img rounded-0" alt="">
+				<div class="card-img-overlay rounded-0">
+				  <h5 class="card-title">Mt. Rainier</h5>
+				  <p class="card-text">Lorem Picsum</p>
+				  <p class="card-text"><small>Credits Me</small></p>
+				</div>
+			  </div>
+			</div> -->
+
+							<div class="col-sm-6 col-lg-4 p-0 m-0">
+								<div class="card rounded-0 text-bg-dark border-0">
+									<img src="images/portfolio/veoAB.jpg" class="card-img rounded-0" alt="">
+									<div class="card-img-overlay rounded-0">
+										<h5 class="card-title">TAMU Veo Rides</h5>
+										<p class="card-text">Lorem Picsum</p>
+										<p class="card-text"><small>Credits TAMU Twitter</small></p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-lg-4 p-0 m-0">
+								<div class="card rounded-0 text-bg-dark border-0">
+									<img src="images/portfolio/viewCO.jpg" class="card-img rounded-0" alt="">
+									<div class="card-img-overlay rounded-0">
+										<h5 class="card-title">Colorado</h5>
+										<p class="card-text">Lorem Picsum</p>
+										<p class="card-text"><small>Credits Me</small></p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-lg-4 p-0 m-0">
+								<div class="card rounded-0 text-bg-dark border-0">
+									<img src="images/portfolio/Royal_Castle_Building.jpg" class="card-img rounded-0"
+										alt="">
+									<div class="card-img-overlay rounded-0">
+										<h5 class="card-title">The Seb Chronicles</h5>
+										<p class="card-text">My Blog</p>
+										<p class="card-text"><small>Last updated: 05/7/23</small></p>
+									</div>
+									<a href="https://sebvc.blogspot.com" title="My Blog: The Seb Chronicles"
+										class="stretched-link" target="_blank" rel="noopener"></a>
+								</div>
+							</div>
+						</div> <!-- .row + masonry-->
+					</div>
+				</div> <!-- Portfolio CONTAINER-->
+			</div>
+		</section>
+		</div>
+
+		<!-- <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+	  integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+	  async></script> -->
+	</section>
+
+	<section id="courses_sec" class="" include-html-snippet="content\courses.html"></section>
+	<section id="quotes_sec" class="" include-html-snippet="content\quotes.html"></section>
+	<section id="stats_sec" class="" include-html-snippet="content\stats.html"></section>
+
+	<!-- Not included snipet bc it breaks jq plugin textarea plugin if not the first one -->
+	<!-- <section id="contact_sec" class="" include-html-snippet="page/body/contact.html"></section> -->
+	<section id="contact_sec">
+		<!-- contact
+			================================================== -->
+		<section id="contact" class="container-fluid bg-seb-dark px-0 pt-3 pb-2 text-off-white text-center">
+
+			<div class="container-fluid px-0 pt-3 pb-2 text-center">
+				<h5 class="text-seb-red text-uppercase">Contact Me</h5>
+				<h2>I'd Love To Hear From You.</h2>
+				<p class="lead text-wrap px-3">This form sends your message straight to my email for you.<br>
+					Feel free to contact me using other means.<br>
+					I'll get back to you soon!</p>
+			</div> <!-- /section-intro-->
+			<div class="div-form container-md mx-0 my-3 align-self-center px-0 pt-0 pb-2 text-center">
+
+				<!-- form -->
+				<form name="contactForm" id="contactForm" method="post" action="">
+					<fieldset class="container-lg my-3">
+						<div class="input-group mb-3">
+							<span class="input-group-text">To:</span>
+							<div class="form-floating">
+								<input type="email" readonly class="form-control" id="staticEmail"
+									placeholder="me@example.com" value="sebvc@tamu.edu">
+								<label class="form-label" for="staticEmail">Recipient's Email</label>
+							</div>
+						</div>
+						<!-- Your Email -->
+						<div class="input-group has-validation has-validation mb-3">
+							<span class="input-group-text">From:</span>
+							<div class="form-floating">
+								<input name="contactEmail" type="email" id="contactEmail" class="form-control"
+									placeholder="you@domain.com" value="" required="" required>
+								<label class="form-label" for="contactEmail">Your Email Address</label>
+								<!-- <div class="invalid-feedback ">
+						Please enter a valid email.
+					</div> -->
+							</div>
+						</div>
+						<!-- Your Name -->
+						<div class="input-group has-validation mb-3">
+							<div class="form-floating">
+								<input name="contactName" type="text" id="contactName" class="form-control"
+									placeholder="Name" value="" minlength="2" required="">
+								<label class="form-label" for="contactName">Your Name</label>
+								<!-- <div class="invalid-feedback">
+						Please provide your name.
+					</div> -->
+							</div>
+						</div>
+						<!-- Subject -->
+						<div class="form-floating mb-3">
+							<input name="contactSubject" type="text" id="contactSubject" class="form-control"
+								placeholder="New Oportunity" value="">
+							<label class="form-label" for="contactSubject">Subject</label>
+							<!-- <div class="invalid-feedback">
+					Please enter a valid email.
+				</div> -->
+						</div>
+						<!-- Message -->
+						<div class="form-floating mb-3">
+							<textarea name="contactMessage" id="contactMessage" class="form-control"
+								placeholder="Message Body" required=""></textarea>
+							<label class="form-label" for="contactMessage">Message</label>
+							<!-- <div class="invalid-feedback">
+					Please don't spam me with empty emails.
+				</div> -->
+						</div>
+						<div class="form-field">
+							<button class="submitform btn btn-seb-intro">Send Email <i
+									class="fa-solid fa-paper-plane"></i></button>
+							<div id="submit-loader">
+								<div class="text-loader">Sending...</div>
+								<div class="s-loader">
+									<div class="bounce1"></div>
+									<div class="bounce2"></div>
+									<div class="bounce3"></div>
+								</div>
+							</div>
+						</div>
+
+
+					</fieldset>
+				</form> <!-- Form End -->
+				<div class="contatiner">
+
+					<div class="d-flex justify-content-center">
+
+						<!-- contact-warning -->
+						<div id="message-warning">
+						</div>
+						<!-- contact-success -->
+						<div id="message-success">
+							<i class="fa fa-check"></i>Your message was sent, thank you!<br>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="contact-info row mt-3 justify-content-center">
+
+						<div class="col-sm-4 col-md-3 col-lg-4">
+							<i class="bi bi-geo-alt-fill"></i>
+							<h5>Where to find me</h5>
+							<p>
+								1501 Northpoint Ln,<br>
+								Apt #3628<br>
+								College Station, TX<br>
+								77840 US
+							</p>
+						</div>
+						<div class="w-100 d-sm-none"></div>
+						<div class="col-sm-4 col-md-3 col-lg-4">
+							<i class="bi bi-envelope"></i>
+							<h5>Email Me At</h5>
+							<p>sebvc@tamu.edu<br>
+								<!-- sebastian.villacuellar@gmail.com -->
+							</p>
+						</div>
+						<div class="w-100 d-sm-none"></div>
+						<div class="col-sm-4 col-md-3 col-lg-4">
+							<i class="bi bi-telephone"></i>
+							<h5>Call Me At</h5>
+							<p>+1 (214) 585-9986</p>
+						</div>
+					</div> <!-- /contact-info -->
+				</div>
+			</div>
+		</section> <!-- /contact -->
+	</section> <!-- /contact_sec -->
+
+	<!-- <section id="footer_sec" class="" include-html-snippet="content\footer.html"></section> -->
+
+	<script>
+		includeHTMLSnippet();
+	</script>
+	<!-- JQ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+		integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- JS - contact -->
+	<!-- needs JQ -->
+	<script src="js/contact-plugins.js" type="text/javascript"></script>
+	<script src="js/contact.js" type="text/javascript"></script>
+	<!-- JS - portfolio -->
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+		integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+		async></script>
+
+	<!-- JS - quotes -->
+	<script src="js/quotes.js" type="text/javascript"></script>
+	<!-- JS - stats -->
+	<script src="https://cdn.rawgit.com/Keyang/node-csvtojson/d41f44aa/browser/csvtojson.min.js"></script>
+	<script src="js/stats.js" type="text/javascript"></script>
+
+	<script>
+		// toggleStats();
+		// toggleQuotes();
+		setTimeout(() => {
+			run_stats();
+			selectQuote();
+		}, 1000);
+	</script>
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+
 </body>
 
 </html>
