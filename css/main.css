@@ -352,6 +352,7 @@ body * {
 	border-radius: 50rem;
 }
 
+/* 
 #about .skill-bars>*:nth-child(3n-1) {
 	text-align: end;
 	background-color: transparent;
@@ -383,7 +384,7 @@ body * {
 	overflow: visible;
 	align-self: end;
 	border-radius: .3rem;
-
+	
 }
 
 #about .percent::after {
@@ -393,12 +394,13 @@ body * {
 	content: "";
 	width: 0;
 	height: 0;
-	/* Triangle Shape */
+	// Triangle Shape
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 7px solid var(--seb-dark-grey);
 	margin: 0rem;
 }
+*/
 
 #about .progress-bar>* {
 	font-family: monospace;
@@ -411,6 +413,23 @@ body * {
 	letter-spacing: 2px;
 	font-size: .85rem;
 	width: 100%;
+}
+
+.progressTooltip {
+/* --bs-tooltip-zindex: #{$zindex-tooltip}; */
+/* --bs-tooltip-max-width: #{$tooltip-max-width}; */
+/* --bs-tooltip-padding-x: #{$tooltip-padding-x}; */
+/* --bs-tooltip-padding-x: .25rem; */
+--bs-tooltip-padding-y: .125rem;
+/* --bs-tooltip-margin: #{$tooltip-margin}; */
+/* @include rfs($tooltip-font-size, --#{$prefix}tooltip-font-size); */
+/* --bs-tooltip-color: var(--seb-dark-grey); */
+/* background-color: var(--seb-red)!important; */
+--bs-tooltip-bg: var(--seb-dark);
+/* --bs-tooltip-border-radius: #{$tooltip-border-radius}; */
+/* --bs-tooltip-opacity: #{$tooltip-opacity}; */
+--bs-tooltip-arrow-height: .55rem;
+font-family: monospace;
 }
 
 /* ==================================================== */
