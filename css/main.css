@@ -104,6 +104,31 @@ body * {
 
 
 /* ==================================================== */
+/* nav */
+#nav .dropdown-menu {
+	/* --bs-dropdown-color: #{$dropdown-dark-color}; */
+	font-family: "poppins-regular", var(--bs-font-sans-serif), sans-serif;
+	--bs-dropdown-link-color: var(--seb-off-white)!important;
+	--bs-dropdown-link-hover-color: var(--seb-off-white)!important;
+	--bs-dropdown-bg: var(--seb-dark)!important;
+	--bs-dropdown-border-color: var(--seb-dark-grey)!important;
+	--bs-dropdown-link-hover-bg: var(--seb-dark-red)!important;
+	--bs-dropdown-link-active-bg: var(--seb-red)!important;
+}
+
+#navDropdownButton {
+ --bs-btn-border-color: 		var(--bs-black-33)!important;
+ --bs-btn-hover-border-color: 	var(--bs-black-33)!important;
+}
+#navDropdownButton > * {
+ align-items: end;
+}
+#navDropdownButton > i {
+ /* font-size: 2rem; */
+ width: 1.75rem;
+}
+
+/* ==================================================== */
 /* Intro BLOCK */
 
 .intro-body,
@@ -416,7 +441,7 @@ body * {
 }
 
 .progressTooltip {
-/* --bs-tooltip-zindex: #{$zindex-tooltip}; */
+--bs-tooltip-zindex: 10;
 /* --bs-tooltip-max-width: #{$tooltip-max-width}; */
 /* --bs-tooltip-padding-x: #{$tooltip-padding-x}; */
 /* --bs-tooltip-padding-x: .25rem; */
