@@ -117,8 +117,8 @@ body * {
 }
 
 #navDropdownButton {
- --bs-btn-border-color: 		var(--bs-black-33)!important;
- --bs-btn-hover-border-color: 	var(--bs-black-33)!important;
+ --bs-btn-border-color: var(--bs-black-33)!important;
+ --bs-btn-hover-border-color: var(--bs-black-33)!important;
 }
 #navDropdownButton > * {
  align-items: end;
