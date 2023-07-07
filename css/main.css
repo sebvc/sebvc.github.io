@@ -874,3 +874,31 @@ a:visited {
 .contact-info p {
 	color: var(--seb-light-grey);
 }
+
+
+/* ==================================================== */
+/* footer */
+#footer {
+	color: var(--seb-off-white)!important;
+}
+#footer li>a>i {  /*Social Icons*/
+	color: var(--seb-off-white)!important;
+	margin-inline-start: .375rem;
+	margin-inline-end: .375rem;
+}
+
+#footer .nav {  /*Social Icons Row*/
+	border-top: var(--seb-off-white-bb) solid .8px;
+	padding-top: .5rem;
+	margin-top: .5rem;
+}
+
+
+/* Small devices `-sm` (phones, 576px and up) */
+@media (min-width: 576px) {/* and (max-width: 767.98px) { */
+	#footer .nav {  /*Social Icons Row*/
+		border-top: none;
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
