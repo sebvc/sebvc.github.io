@@ -723,7 +723,7 @@ a:visited {
 	--bs-accordion-bg: var(--seb-dark);
 	--bs-accordion-color: var(--seb-light-grey);
 	--bs-accordion-btn-color: var(--seb-light-grey);
-	--bs-accordion-active-color: var(--seb-light-red) !important;
+	--bs-accordion-active-color: var(--seb-light-red)!important;
 	--bs-accordion-active-bg: var(--seb-off-white);
 	--bs-accordion-border-color: var(--seb-dark);
 	/* using color 'grey' and 'fa-solid fa-chevron-down' svg path at: https://fontawesome.com/icons/chevron-down?f=classic&s=solid */
