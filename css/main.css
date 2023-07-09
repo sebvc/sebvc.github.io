@@ -224,10 +224,10 @@ body * {
 #intro {
 	background: transparent;
 	/* parallax scrolling */
-	/* background: transparent url(/images/Royal_Castle_Building_2.jpg) no-repeat center bottom;
-  background-image: url(/images/Royal_Castle_Building_2.jpg);
-  background: transparent url(../../images/Royal_Castle_Building_2.jpg) no-repeat center bottom;
-  background-image: url(../../images/Royal_Castle_Building_2.jpg);
+	/* background: transparent url(/~sebvc/images/Royal_Castle_Building_2.jpg) no-repeat center bottom;
+  background-image: url(/~sebvc/images/Royal_Castle_Building_2.jpg);
+  background: transparent url(../../~sebvc/images/Royal_Castle_Building_2.jpg) no-repeat center bottom;
+  background-image: url(../../~sebvc/images/Royal_Castle_Building_2.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
