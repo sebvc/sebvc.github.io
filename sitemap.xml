@@ -58,56 +58,56 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://people.tamu.edu/~sebvc/pdfs/sebvc_Unofficial_Transcript.pdf</loc>
+    <loc>http://people.tamu.edu/~sebvc/content/pdfs/sebvc_Unofficial_Transcript.pdf</loc>
     <lastmod>2023-02-28T02:28:40+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://people.tamu.edu/~sebvc/pdfs/CertificateOfCompletion_Learning%20Julia.pdf</loc>
+    <loc>http://people.tamu.edu/~sebvc/content/pdfs/CertificateOfCompletion_Learning%20Julia.pdf</loc>
     <lastmod>2023-02-28T02:28:39+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>
-      http://people.tamu.edu/~sebvc/pdfs/CertificateOfCompletion_Julia%20for%20Data%20Scientists%20First%20Look.pdf</loc>
+      http://people.tamu.edu/~sebvc/content/pdfs/CertificateOfCompletion_Julia%20for%20Data%20Scientists%20First%20Look.pdf</loc>
     <lastmod>2023-05-08T04:47:23+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>
-      http://people.tamu.edu/~sebvc/pdfs/CertificateOfCompletion_pandas%20Essential%20Training.pdf</loc>
+      http://people.tamu.edu/~sebvc/content/pdfs/CertificateOfCompletion_pandas%20Essential%20Training.pdf</loc>
     <lastmod>2023-05-08T04:47:23+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://people.tamu.edu/~sebvc/pdfs/CertificateOfCompletion_Learning%20GitHub.pdf</loc>
-    <lastmod>2023-05-08T04:47:23+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>
-      http://people.tamu.edu/~sebvc/pdfs/CertificateOfCompletion_Bootstrap_5_Essential_Training.pdf</loc>
+    <loc>http://people.tamu.edu/~sebvc/content/pdfs/CertificateOfCompletion_Learning%20GitHub.pdf</loc>
     <lastmod>2023-05-08T04:47:23+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>
-      http://people.tamu.edu/~sebvc/pdfs/LearnBeckhoffUS/TwinCAT3_Object_Oriented_Programming(OOP).pdf</loc>
+      http://people.tamu.edu/~sebvc/content/pdfs/CertificateOfCompletion_Bootstrap_5_Essential_Training.pdf</loc>
     <lastmod>2023-05-08T04:47:23+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://people.tamu.edu/~sebvc/pdfs/LearnBeckhoffUS/TwinCAT3_Intermediate_Motion.pdf</loc>
+    <loc>
+      http://people.tamu.edu/~sebvc/content/pdfs/LearnBeckhoffUS/TwinCAT3_Object_Oriented_Programming(OOP).pdf</loc>
     <lastmod>2023-05-08T04:47:23+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://people.tamu.edu/~sebvc/pdfs/LearnBeckhoffUS/TwinCAT3_Motion_Basics.pdf</loc>
+    <loc>http://people.tamu.edu/~sebvc/content/pdfs/LearnBeckhoffUS/TwinCAT3_Intermediate_Motion.pdf</loc>
     <lastmod>2023-05-08T04:47:23+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://people.tamu.edu/~sebvc/pdfs/ap-awards-certificates.pdf</loc>
+    <loc>http://people.tamu.edu/~sebvc/content/pdfs/LearnBeckhoffUS/TwinCAT3_Motion_Basics.pdf</loc>
+    <lastmod>2023-05-08T04:47:23+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://people.tamu.edu/~sebvc/content/pdfs/ap-awards-certificates.pdf</loc>
     <lastmod>2023-02-28T02:28:40+00:00</lastmod>
     <priority>0.80</priority>
   </url>

@@ -35,7 +35,7 @@
 			$.ajax({
 
 				type: "POST",
-				url: "/~sebvc/php/email_sender.php",
+				url: "/~sebvc/style/php/email_sender.php",
 				data: $(form).serialize(),
 				beforeSend: function () {
 
