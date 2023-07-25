@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/1613f80fc9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style/css/main.css" type="text/css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/style/css/fonts.css" type="text/css" charset="utf-8" />
+
+    <!-- favicons -->
+    <link rel="icon" type="image/png" href="/content/images/favicon.png">
+
+    <script src="/style/js/includeHTMLsnip.js" type="text/javascript"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVY07GTM4N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VVY07GTM4N');
+    </script>
+
+    <title>Seb&#8614; Contact</title> <!-- (&#8614;) is (↦) -->
+</head>
+
+
+<!-- <section id="nav_sec" class="" include-html-snippet="/content/nav-ext.html"></section> -->
+<!-- included Here becuase snipet only breaks jq plugin textarea plugin if its not the first one -->
+<!-- <section id="contact_sec" class="" include-html-snippet="/content/contact.html"></section> -->
+
+<body class="bg-seb-dark">
+    <!-- Google Form: https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/viewform?usp=pp_url
+		usp=pp_url
+		&entry.354116389=sebvc@tamu.edu
+		&entry.1109242279=Sebastian+Villa
+		&entry.751595604=Topic+Field
+		&entry.2024228114=Lorem+ipsum+dolor+sit+amet -->
+    <form name="gform" id="gform" enctype="text/plain"
+        action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?usp=pp_url"
+        target="hidden_iframe" onsubmit="submitted=true;"
+        class="text-off-white container justify-content-center">
+        Your Email:<br>
+        <input type="text" name="entry.354116389" id="entry.354116389"><br>
+        Your Name:<br>
+        <input type="text" name="entry.1109242279" id="entry.1109242279"><br>
+        Subject:<br>
+        <input type="text" name="entry.751595604" id="entry.751595604">
+        Message:<br>
+        <input type="text" name="entry.2024228114" id="entry.2024228114">
+        <input type="submit" value="Submit">
+    </form>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    <section id="footer_sec" class="" include-html-snippet="/content/footer.html"></section>
+
+
+    <script>
+        includeHTMLSnippet();
+    </script>
+    <!-- JQ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JS - contact -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted = false;</script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function (e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Your submission has been processed...');
+        });
+    </script>
+    <!-- needs JQ -->
+    <script src="/style/js/contact-plugins.js" type="text/javascript"></script>
+    <script src="/style/js/contact.js" type="text/javascript"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

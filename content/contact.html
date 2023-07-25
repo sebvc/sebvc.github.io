@@ -1,5 +1,7 @@
 <!-- contact
    ================================================== -->
+
+   <!-- Google Form: https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/viewform?usp=pp_url&entry.354116389=sebvc@tamu.edu&entry.1109242279=Sebastian+Villa&entry.751595604=Topic+Field&entry.2024228114=Lorem+ipsum+dolor+sit+amet -->
 <section id="contact" class="container-fluid bg-seb-dark px-0 pt-3 pb-2 text-off-white text-center">
 
 	<div class="container-fluid px-0 pt-3 pb-2 text-center">
@@ -10,9 +12,28 @@
 			I'll get back to you soon!</p>
 	</div> <!-- /section-intro-->
 	<div class="div-form container-md mx-0 my-3 align-self-center px-0 pt-0 pb-2 text-center">
+<!-- 
+	<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/formResponse?"
+	 target="hidden_iframe" onsubmit="submitted=true;">
+  First name:<br>
+  <input type="text" name="entry.810989529" id="entry.810989529"><br>
+  Last name:<br>
+  <input type="text" name="entry.463380756" id="entry.463380756">
+  <input type="submit" value="Submit">
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+ -->
+    <!-- Google Form: https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/viewform?
+		usp=pp_url
+		&entry.354116389=sebvc@tamu.edu
+		&entry.1109242279=Sebastian+Villa
+		&entry.751595604=Topic+Field
+		&entry.2024228114=Lorem+ipsum+dolor+sit+amet -->
 
 		<!-- form -->
-		<form name="contactForm" id="contactForm" method="post" action="">
+		<form name="contactForm" id="contactForm" enctype="text/plain" action="https://docs.google.com/forms/d/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/formResponse?"
+		target="hidden_iframe" onsubmit="submitted=true;">
 			<fieldset class="container-lg my-3">
 				<div class="input-group mb-3">
 					<span class="input-group-text">To:</span>
@@ -26,9 +47,9 @@
 				<div class="input-group has-validation has-validation mb-3">
 					<span class="input-group-text">From:</span>
 					<div class="form-floating">
-						<input name="contactEmail" type="email" id="contactEmail" class="form-control"
+						<input name="entry.354116389" type="email" id="entry.354116389" class="form-control"
 							placeholder="you@domain.com" value="" required="" required>
-						<label class="form-label" for="contactEmail">Your Email Address</label>
+						<label class="form-label" for="entry.354116389">Your Email Address</label>
 						<!-- <div class="invalid-feedback ">
 						Please enter a valid email.
 					</div> -->
@@ -37,9 +58,9 @@
 				<!-- Your Name -->
 				<div class="input-group has-validation mb-3">
 					<div class="form-floating">
-						<input name="contactName" type="text" id="contactName" class="form-control" placeholder="Name"
+						<input name="entry.1109242279" type="text" id="entry.1109242279" class="form-control" placeholder="Name"
 							value="" minlength="2" required="">
-						<label class="form-label" for="contactName">Your Name</label>
+						<label class="form-label" for="entry.1109242279">Your Name</label>
 						<!-- <div class="invalid-feedback">
 						Please provide your name.
 					</div> -->
@@ -47,49 +68,41 @@
 				</div>
 				<!-- Subject -->
 				<div class="form-floating mb-3">
-					<input name="contactSubject" type="text" id="contactSubject" class="form-control"
+					<input name="entry.751595604" type="text" id="entry.751595604" class="form-control"
 						placeholder="New Oportunity" value="">
-					<label class="form-label" for="contactSubject">Subject</label>
+					<label class="form-label" for="entry.751595604">Subject</label>
 					<!-- <div class="invalid-feedback">
 					Please enter a valid email.
 				</div> -->
 				</div>
 				<!-- Message -->
 				<div class="form-floating mb-3">
-					<textarea name="contactMessage" id="contactMessage" class="form-control" placeholder="Message Body"
+					<textarea name="entry.2024228114" id="entry.2024228114" class="form-control" placeholder="Message Body"
 						required=""></textarea>
-					<label class="form-label" for="contactMessage">Message</label>
+					<label class="form-label" for="entry.2024228114">Message</label>
 					<!-- <div class="invalid-feedback">
 					Please don't spam me with empty emails.
 				</div> -->
 				</div>
-				<div class="form-field">
-					<button class="submitform btn btn-seb-intro">Send Email <i
-							class="fa-solid fa-paper-plane"></i></button>
-					<div id="submit-loader">
-						<div class="text-loader">Sending...</div>
-						<div class="s-loader">
-							<div class="bounce1"></div>
-							<div class="bounce2"></div>
-							<div class="bounce3"></div>
-						</div>
-					</div>
-				</div>
-
+				<input type="submit" value="Submit">
+				
 
 			</fieldset>
 		</form> <!-- Form End -->
-		<div class="contatiner">
-
-			<div class="d-flex justify-content-center">
-
+		<!-- <div class="contatiner"> -->
+			<!-- <div class="d-flex justify-content-center"> -->
 				<!-- contact-warning -->
-				<div id="message-warning">
-				</div>
+				<!-- <div id="message-warning"> -->
+				<!-- </div> -->
 				<!-- contact-success -->
-				<div id="message-success">
-					<i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				</div>
+				<!-- <div id="message-success"> -->
+					<!-- <i class="fa fa-check"></i>Your message was sent, thank you!<br> -->
+				<!-- </div> -->
+			<!-- </div> -->
+		<!-- </div> -->
+		<div class="contatiner">
+			<div class="d-flex justify-content-center">
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 			</div>
 		</div>
 
