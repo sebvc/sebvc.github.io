@@ -1,7 +1,5 @@
 <!-- contact
-   ================================================== -->
-
-   <!-- Google Form: https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/viewform?usp=pp_url&entry.354116389=sebvc@tamu.edu&entry.1109242279=Sebastian+Villa&entry.751595604=Topic+Field&entry.2024228114=Lorem+ipsum+dolor+sit+amet -->
+		================================================== -->
 <section id="contact" class="container-fluid bg-seb-dark px-0 pt-3 pb-2 text-off-white text-center">
 
 	<div class="container-fluid px-0 pt-3 pb-2 text-center">
@@ -12,28 +10,9 @@
 			I'll get back to you soon!</p>
 	</div> <!-- /section-intro-->
 	<div class="div-form container-md mx-0 my-3 align-self-center px-0 pt-0 pb-2 text-center">
-<!-- 
-	<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/formResponse?"
-	 target="hidden_iframe" onsubmit="submitted=true;">
-  First name:<br>
-  <input type="text" name="entry.810989529" id="entry.810989529"><br>
-  Last name:<br>
-  <input type="text" name="entry.463380756" id="entry.463380756">
-  <input type="submit" value="Submit">
-</form>
-
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
- -->
-    <!-- Google Form: https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/viewform?
-		usp=pp_url
-		&entry.354116389=sebvc@tamu.edu
-		&entry.1109242279=Sebastian+Villa
-		&entry.751595604=Topic+Field
-		&entry.2024228114=Lorem+ipsum+dolor+sit+amet -->
-
 		<!-- form -->
-		<form name="contactForm" id="contactForm" enctype="text/plain" action="https://docs.google.com/forms/d/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/formResponse?"
-		target="hidden_iframe" onsubmit="submitted=true;">
+		<form name="contactForm" id="contactForm" enctype="text/plain"
+			action="https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/formResponse?usp=pp_url">
 			<fieldset class="container-lg my-3">
 				<div class="input-group mb-3">
 					<span class="input-group-text">To:</span>
@@ -58,8 +37,8 @@
 				<!-- Your Name -->
 				<div class="input-group has-validation mb-3">
 					<div class="form-floating">
-						<input name="entry.1109242279" type="text" id="entry.1109242279" class="form-control" placeholder="Name"
-							value="" minlength="2" required="">
+						<input name="entry.1109242279" type="text" id="entry.1109242279" class="form-control"
+							placeholder="Name" value="" minlength="2" required="">
 						<label class="form-label" for="entry.1109242279">Your Name</label>
 						<!-- <div class="invalid-feedback">
 						Please provide your name.
@@ -77,32 +56,74 @@
 				</div>
 				<!-- Message -->
 				<div class="form-floating mb-3">
-					<textarea name="entry.2024228114" id="entry.2024228114" class="form-control" placeholder="Message Body"
-						required=""></textarea>
+					<textarea name="entry.2024228114" id="entry.2024228114" class="form-control"
+						placeholder="Message Body" required=""></textarea>
 					<label class="form-label" for="entry.2024228114">Message</label>
 					<!-- <div class="invalid-feedback">
 					Please don't spam me with empty emails.
 				</div> -->
 				</div>
-				<input type="submit" value="Submit">
-				
+				<div class="form-field">
+					<button class="submitform btn btn-seb-intro" type="submit" data-bs-toggle="modal"
+						data-bs-target="#googleModal">Send Email <i class="fa-solid fa-paper-plane"></i></button>
+					<div id="submit-loader">
+						<div class="text-loader">Sending...</div>
+						<div class="s-loader">
+							<div class="bounce1"></div>
+							<div class="bounce2"></div>
+							<div class="bounce3"></div>
+						</div>
+					</div>
+				</div>
+
 
 			</fieldset>
 		</form> <!-- Form End -->
-		<!-- <div class="contatiner"> -->
-			<!-- <div class="d-flex justify-content-center"> -->
-				<!-- contact-warning -->
-				<!-- <div id="message-warning"> -->
-				<!-- </div> -->
-				<!-- contact-success -->
-				<!-- <div id="message-success"> -->
-					<!-- <i class="fa fa-check"></i>Your message was sent, thank you!<br> -->
-				<!-- </div> -->
-			<!-- </div> -->
-		<!-- </div> -->
+		<!-- Button trigger modal -->
+		<button type="button" id="modalLauncher" class="btn btn-seb-intro" data-bs-toggle="modal" style="display:none;"
+			data-bs-target="#googleModal">
+			Reopen Popup <i class="fa-regular fa-window-restore"></i>
+		</button>
+
+		<!-- Google Form Modal -->
+		<div class="modal fade modal-lg modal-fullscreen-sm-down" id="googleModal" tabindex="-1"
+			aria-labelledby="googleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content h-100 bg-seb-dark" style="color: var(--seb-off-white-bb);">
+					<div class="modal-header border-0">
+						<h1 class="modal-title fs-5" id="googleModalLabel"><i class="fa-brands fa-google"></i>
+							Email Form</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+							style="filter:invert(100%) hue-rotate(180deg)"></button>
+					</div>
+					<div class="modal-body p-0 " style="overflow-y: hidden;">
+						<!-- <iframe name="hidden_iframe" id="hidden_iframe" class="w-100 h-100" src=""></iframe> -->
+						<iframe name="hidden_iframe" id="hidden_iframe" class="w-100 h-100" allowfullscreen=""
+							frameborder="0"
+							src="https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/viewform"></iframe>
+						<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+					</div>
+					<div class="modal-footer border-0">
+						<a type="button" class="btn btn-seb-outline2"
+							href="https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/viewform"
+							target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> New Tab</a>
+						<button type="button" class="btn btn-seb-intro" data-bs-dismiss="modal"><i
+								class="fa-solid fa-xmark"></i> Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="contatiner">
+
 			<div class="d-flex justify-content-center">
-				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+				<!-- contact-warning -->
+				<div id="message-warning">
+				</div>
+				<!-- contact-success -->
+				<div id="message-success">
+					<i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				</div>
 			</div>
 		</div>
 
@@ -134,5 +155,8 @@
 			</div> <!-- /contact-info -->
 		</div>
 	</div>
+
+
+
 
 </section> <!-- /contact -->

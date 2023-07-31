@@ -52,20 +52,6 @@
                     I'll get back to you soon!</p>
             </div> <!-- /section-intro-->
             <div class="div-form container-md mx-0 my-3 align-self-center px-0 pt-0 pb-2 text-center">
-
-                <!-- <form name="gform" id="gform" enctype="text/plain"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/formResponse?usp=pp_url"
-        class="text-off-white container justify-content-center">
-        Your Email:<br>
-        <input type="text" name="Your Email" id="entry.354116389"><br>
-        Your Name:<br>
-        <input type="text" name="Your Name" id="entry.1109242279"><br>
-        Subject:<br>
-        <input type="text" name="Email Subject" id="entry.751595604">
-        Message:<br>
-        <textarea type="text" name="Message Body" id="entry.2024228114"></textarea>
-        <input type="submit" value="Submit">
-    </form> -->
                 <!-- form -->
                 <form name="contactForm" id="contactForm" enctype="text/plain"
                     action="https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/formResponse?usp=pp_url">
@@ -231,47 +217,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- JS - contact -->
-    <script type="text/javascript">
-        // $('#gform').on('submit', function (e) {
-        //     $('#gform *').fadeOut(2000);
-        //     $('#gform').prepend('Your submission has been processed...');
-        // });
-
-        ////////////////////////////////////////////////
-        // const contactForm = document.getElementById('contactForm'); // <form>
-        // const googleModal = document.getElementById('googleModal'); // modal
-        // const modalLauncher = document.getElementById('modalLauncher'); // modal launch button
-        document.getElementById('contactForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            // const contactForm = document.getElementById('contactForm'); // <form>
-            const hidden_iframe = document.getElementById('hidden_iframe'); // google form iframe inside modal
-            // const googleModal = document.getElementById('googleModal'); // modal
-            // const modalLauncher = document.getElementById('modalLauncher'); // modal launch button
-
-            const emailValue = document.getElementById('entry.354116389').value; // E-Mail
-            const nameValue = document.getElementById('entry.1109242279').value; // Name
-            const subjectValue = document.getElementById('entry.751595604').value; // Subject
-            const messageValue = document.getElementById('entry.2024228114').value; // message body
-
-            // Construct the Google Form URL with the custom query parameters
-            const baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/formResponse'; // Replace with your target URL
-            const queryParams = `?usp=pp_url&entry.354116389=${encodeURIComponent(emailValue)}&entry.1109242279=${encodeURIComponent(nameValue)}&entry.751595604=${encodeURIComponent(subjectValue)}&entry.2024228114=${encodeURIComponent(messageValue)}`;
-            const targetURL = baseURL + queryParams;
-
-            // Navigate to the generated URL
-            // window.location.href = targetURL; // opens a new tab
-            hidden_iframe.src = targetURL; // renders in <iframe id="hidden_iframe">
-            // googleModal.show(modalLauncher);
-            $('#modalLauncher').fadeIn(750);
-            $('#contactForm').fadeOut(750);
-            // contactForm.style = "display:none;";
-
-        });
-
-////////////////////////////////////////////////
-
-    </script>
     <!-- needs JQ -->
     <script src="/style/js/contact-plugins.js" type="text/javascript"></script>
     <script src="/style/js/contact.js" type="text/javascript"></script>
