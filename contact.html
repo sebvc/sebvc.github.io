@@ -35,34 +35,190 @@
     <title>Seb&#8614; Contact</title> <!-- (&#8614;) is (↦) -->
 </head>
 
-
-<!-- <section id="nav_sec" class="" include-html-snippet="/content/nav-ext.html"></section> -->
-<!-- included Here becuase snipet only breaks jq plugin textarea plugin if its not the first one -->
-<!-- <section id="contact_sec" class="" include-html-snippet="/content/contact.html"></section> -->
-
 <body class="bg-seb-dark">
-    <!-- Google Form: https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/viewform?usp=pp_url
-		usp=pp_url
-		&entry.354116389=sebvc@tamu.edu
-		&entry.1109242279=Sebastian+Villa
-		&entry.751595604=Topic+Field
-		&entry.2024228114=Lorem+ipsum+dolor+sit+amet -->
-    <form name="gform" id="gform" enctype="text/plain"
-        action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?usp=pp_url"
-        target="hidden_iframe" onsubmit="submitted=true;"
+    <section id="nav_sec" class="" include-html-snippet="/content/nav-ext.html"></section>
+    <!-- included Here becuase snipet only breaks jq plugin textarea plugin if its not the first one -->
+    <!-- <section id="contact_sec" class="" include-html-snippet="/content/contact.html"></section> -->
+    <section id="contact_sec" class="">
+        <!-- contact
+		================================================== -->
+        <section id="contact" class="container-fluid bg-seb-dark px-0 pt-3 pb-2 text-off-white text-center">
+
+            <div class="container-fluid px-0 pt-3 pb-2 text-center">
+                <h5 class="text-seb-red text-uppercase">Contact Me</h5>
+                <h2>I'd Love To Hear From You.</h2>
+                <p class="lead text-wrap px-3">This form sends your message straight to my email for you.<br>
+                    Feel free to contact me using other means.<br>
+                    I'll get back to you soon!</p>
+            </div> <!-- /section-intro-->
+            <div class="div-form container-md mx-0 my-3 align-self-center px-0 pt-0 pb-2 text-center">
+
+                <!-- <form name="gform" id="gform" enctype="text/plain"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/formResponse?usp=pp_url"
         class="text-off-white container justify-content-center">
         Your Email:<br>
-        <input type="text" name="entry.354116389" id="entry.354116389"><br>
+        <input type="text" name="Your Email" id="entry.354116389"><br>
         Your Name:<br>
-        <input type="text" name="entry.1109242279" id="entry.1109242279"><br>
+        <input type="text" name="Your Name" id="entry.1109242279"><br>
         Subject:<br>
-        <input type="text" name="entry.751595604" id="entry.751595604">
+        <input type="text" name="Email Subject" id="entry.751595604">
         Message:<br>
-        <textarea type="text" name="entry.2024228114" id="entry.2024228114"></textarea>
+        <textarea type="text" name="Message Body" id="entry.2024228114"></textarea>
         <input type="submit" value="Submit">
-    </form>
+    </form> -->
+                <!-- form -->
+                <form name="contactForm" id="contactForm" enctype="text/plain"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/formResponse?usp=pp_url">
+                    <fieldset class="container-lg my-3">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">To:</span>
+                            <div class="form-floating">
+                                <input type="email" readonly class="form-control" id="staticEmail"
+                                    placeholder="me@example.com" value="sebvc@tamu.edu">
+                                <label class="form-label" for="staticEmail">Recipient's Email</label>
+                            </div>
+                        </div>
+                        <!-- Your Email -->
+                        <div class="input-group has-validation has-validation mb-3">
+                            <span class="input-group-text">From:</span>
+                            <div class="form-floating">
+                                <input name="entry.354116389" type="email" id="entry.354116389" class="form-control"
+                                    placeholder="you@domain.com" value="" required="" required>
+                                <label class="form-label" for="entry.354116389">Your Email Address</label>
+                                <!-- <div class="invalid-feedback ">
+						Please enter a valid email.
+					</div> -->
+                            </div>
+                        </div>
+                        <!-- Your Name -->
+                        <div class="input-group has-validation mb-3">
+                            <div class="form-floating">
+                                <input name="entry.1109242279" type="text" id="entry.1109242279" class="form-control"
+                                    placeholder="Name" value="" minlength="2" required="">
+                                <label class="form-label" for="entry.1109242279">Your Name</label>
+                                <!-- <div class="invalid-feedback">
+						Please provide your name.
+					</div> -->
+                            </div>
+                        </div>
+                        <!-- Subject -->
+                        <div class="form-floating mb-3">
+                            <input name="entry.751595604" type="text" id="entry.751595604" class="form-control"
+                                placeholder="New Oportunity" value="">
+                            <label class="form-label" for="entry.751595604">Subject</label>
+                            <!-- <div class="invalid-feedback">
+					Please enter a valid email.
+				</div> -->
+                        </div>
+                        <!-- Message -->
+                        <div class="form-floating mb-3">
+                            <textarea name="entry.2024228114" id="entry.2024228114" class="form-control"
+                                placeholder="Message Body" required=""></textarea>
+                            <label class="form-label" for="entry.2024228114">Message</label>
+                            <!-- <div class="invalid-feedback">
+					Please don't spam me with empty emails.
+				</div> -->
+                        </div>
+                        <div class="form-field">
+                            <button class="submitform btn btn-seb-intro" type="submit" data-bs-toggle="modal"
+                                data-bs-target="#googleModal">Send Email <i
+                                    class="fa-solid fa-paper-plane"></i></button>
+                            <div id="submit-loader">
+                                <div class="text-loader">Sending...</div>
+                                <div class="s-loader">
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
+                                </div>
+                            </div>
+                        </div>
 
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+                    </fieldset>
+                </form> <!-- Form End -->
+                <!-- Button trigger modal -->
+                <button type="button" id="modalLauncher" class="btn btn-seb-intro" data-bs-toggle="modal"
+                    style="display:none;" data-bs-target="#googleModal">
+                    Reopen Popup <i class="fa-regular fa-window-restore"></i>
+                </button>
+
+                <!-- Google Form Modal -->
+                <div class="modal fade modal-lg modal-fullscreen-sm-down" id="googleModal" tabindex="-1"
+                    aria-labelledby="googleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content h-100 bg-seb-dark" style="color: var(--seb-off-white-bb);">
+                            <div class="modal-header border-0">
+                                <h1 class="modal-title fs-5" id="googleModalLabel"><i class="fa-brands fa-google"></i>
+                                    Email Form</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    style="filter:invert(100%) hue-rotate(180deg)"></button>
+                            </div>
+                            <div class="modal-body p-0 " style="overflow-y: hidden;">
+                                <!-- <iframe name="hidden_iframe" id="hidden_iframe" class="w-100 h-100" src=""></iframe> -->
+                                <iframe name="hidden_iframe" id="hidden_iframe" class="w-100 h-100" allowfullscreen=""
+                                    frameborder="0"
+                                    src="https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/viewform"></iframe>
+                                <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+                            </div>
+                            <div class="modal-footer border-0">
+                                <a type="button" class="btn btn-seb-outline2"
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/viewform"
+                                    target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> New Tab</a>
+                                <button type="button" class="btn btn-seb-intro" data-bs-dismiss="modal"><i
+                                        class="fa-solid fa-xmark"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contatiner">
+
+                    <div class="d-flex justify-content-center">
+
+                        <!-- contact-warning -->
+                        <div id="message-warning">
+                        </div>
+                        <!-- contact-success -->
+                        <div id="message-success">
+                            <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="contact-info row mt-3 justify-content-center">
+
+                        <div class="col-sm-4 col-md-3 col-lg-4">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <h5>Where to find me</h5>
+                            <p>Eden Prairie / Savage, MN
+                                <!-- DFW / College Station, TX -->
+                                <!-- Los Angeles, CA -->
+                            </p>
+                        </div>
+                        <div class="w-100 d-sm-none"></div>
+                        <div class="col-sm-4 col-md-3 col-lg-4">
+                            <i class="bi bi-envelope"></i>
+                            <h5>Email Me At</h5>
+                            <p>sebvc@tamu.edu
+                                <!-- sebastian.villacuellar@gmail.com -->
+                            </p>
+                        </div>
+                        <div class="w-100 d-sm-none"></div>
+                        <div class="col-sm-4 col-md-3 col-lg-4">
+                            <i class="bi bi-telephone"></i>
+                            <h5>Call Me At</h5>
+                            <p>+1 (214) 585-9986</p>
+                        </div>
+                    </div> <!-- /contact-info -->
+                </div>
+            </div>
+
+
+
+
+        </section> <!-- /contact -->
+    </section>
+
     <section id="footer_sec" class="" include-html-snippet="/content/footer.html"></section>
 
 
@@ -75,13 +231,46 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- JS - contact -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript">var submitted = false;</script>
     <script type="text/javascript">
-        $('#gform').on('submit', function (e) {
-            $('#gform *').fadeOut(2000);
-            $('#gform').prepend('Your submission has been processed...');
+        // $('#gform').on('submit', function (e) {
+        //     $('#gform *').fadeOut(2000);
+        //     $('#gform').prepend('Your submission has been processed...');
+        // });
+
+        ////////////////////////////////////////////////
+        // const contactForm = document.getElementById('contactForm'); // <form>
+        // const googleModal = document.getElementById('googleModal'); // modal
+        // const modalLauncher = document.getElementById('modalLauncher'); // modal launch button
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // const contactForm = document.getElementById('contactForm'); // <form>
+            const hidden_iframe = document.getElementById('hidden_iframe'); // google form iframe inside modal
+            // const googleModal = document.getElementById('googleModal'); // modal
+            // const modalLauncher = document.getElementById('modalLauncher'); // modal launch button
+
+            const emailValue = document.getElementById('entry.354116389').value; // E-Mail
+            const nameValue = document.getElementById('entry.1109242279').value; // Name
+            const subjectValue = document.getElementById('entry.751595604').value; // Subject
+            const messageValue = document.getElementById('entry.2024228114').value; // message body
+
+            // Construct the Google Form URL with the custom query parameters
+            const baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdjPnpfabaYdgm5YULcs4navaA4Y4eRkccHktEZHE8X30YuNg/formResponse'; // Replace with your target URL
+            const queryParams = `?usp=pp_url&entry.354116389=${encodeURIComponent(emailValue)}&entry.1109242279=${encodeURIComponent(nameValue)}&entry.751595604=${encodeURIComponent(subjectValue)}&entry.2024228114=${encodeURIComponent(messageValue)}`;
+            const targetURL = baseURL + queryParams;
+
+            // Navigate to the generated URL
+            // window.location.href = targetURL; // opens a new tab
+            hidden_iframe.src = targetURL; // renders in <iframe id="hidden_iframe">
+            // googleModal.show(modalLauncher);
+            $('#modalLauncher').fadeIn(750);
+            $('#contactForm').fadeOut(750);
+            // contactForm.style = "display:none;";
+
         });
+
+////////////////////////////////////////////////
+
     </script>
     <!-- needs JQ -->
     <script src="/style/js/contact-plugins.js" type="text/javascript"></script>

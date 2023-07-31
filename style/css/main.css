@@ -66,6 +66,24 @@ body * {
 	box-shadow: 0 0 0 0.25rem var(--seb-red-bb);
 }
 
+.btn-seb-outline2 {
+	border-radius: .25rem !important;
+	align-self: center;
+	--bs-btn-color: var(--seb-grey) !important;
+	--bs-btn-bg: transparent !important;
+	--bs-btn-border-color: var(--seb-grey) !important;
+	--bs-btn-hover-color: var(--seb-off-white) !important;
+	--bs-btn-hover-bg: var(--seb-dark-red) !important;
+	--bs-btn-hover-border-color: var(--seb-red) !important;
+	--bs-btn-active-color: var(--seb-off-white) !important;
+	--bs-btn-active-bg: var(--seb-dark-red) !important;
+	--bs-btn-active-border-color: var(--seb-dark-red-74) !important;
+}
+
+.btn-seb-outline2:focus {
+	box-shadow: 0 0 0 0.25rem var(--seb-red-bb);
+}
+
 .btn-seb-primary {
 	border-radius: .25rem !important;
 	align-self: center;
@@ -1001,6 +1019,9 @@ a:visited {
 	color: var(--seb-light-grey);
 }
 
+#contact #hidden_iframe {
+filter: invert(91%) hue-rotate(180deg) brightness(90%);
+}
 
 /* ==================================================== */
 /* footer */
