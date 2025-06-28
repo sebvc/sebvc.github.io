@@ -25,9 +25,9 @@
 	------------------------------------------------------ */
 
 	/* local validation */
-	$('#contactForm').validate({
+/*	$('#contactForm').validate({
 
-		/* submit via ajax */
+		// submit via ajax
 		submitHandler: function (form) {
 
 			var sLoader = $('#submit-loader');
@@ -72,5 +72,5 @@
 
 	});
 
-
+*/
 })(jQuery);

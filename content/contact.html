@@ -5,20 +5,20 @@
 	<div class="container-fluid px-0 pt-3 pb-2 text-center">
 		<h5 class="text-seb-red text-uppercase">Contact Me</h5>
 		<h2>I'd Love To Hear From You.</h2>
-		<p class="lead text-wrap px-3">This form sends your message straight to my email for you.<br>
+		<p class="lead text-wrap px-3">Click the button below to open your Mail app.<br>
 			Feel free to contact me using other means.<br>
 			I'll get back to you soon!</p>
 	</div> <!-- /section-intro-->
 	<div class="div-form container-md mx-0 my-3 align-self-center px-0 pt-0 pb-2 text-center">
 
 		<!-- form -->
-		<form name="contactForm" id="contactForm" method="post" action="">
+		<form name="contactForm" id="contactForm">
 			<fieldset class="container-lg my-3">
 				<div class="input-group mb-3">
 					<span class="input-group-text">To:</span>
 					<div class="form-floating">
 						<input type="email" readonly class="form-control" id="staticEmail" placeholder="me@example.com"
-							value="sebvc@tamu.edu">
+							value="sebastian.villa100@gmail.com">
 						<label class="form-label" for="staticEmail">Recipient's Email</label>
 					</div>
 				</div>
@@ -26,48 +26,24 @@
 				<div class="input-group has-validation has-validation mb-3">
 					<span class="input-group-text">From:</span>
 					<div class="form-floating">
-						<input name="contactEmail" type="email" id="contactEmail" class="form-control"
-							placeholder="you@domain.com" value="" required="" required>
+						<input name="contactEmail" type="email" readonly class="form-control" id="contactEmail"
+							placeholder="you@domain.com" value="you@domain.com">
 						<label class="form-label" for="contactEmail">Your Email Address</label>
 						<!-- <div class="invalid-feedback ">
 						Please enter a valid email.
 					</div> -->
 					</div>
 				</div>
-				<!-- Your Name -->
-				<div class="input-group has-validation mb-3">
-					<div class="form-floating">
-						<input name="contactName" type="text" id="contactName" class="form-control" placeholder="Name"
-							value="" minlength="2" required="">
-						<label class="form-label" for="contactName">Your Name</label>
-						<!-- <div class="invalid-feedback">
-						Please provide your name.
-					</div> -->
-					</div>
-				</div>
-				<!-- Subject -->
-				<div class="form-floating mb-3">
-					<input name="contactSubject" type="text" id="contactSubject" class="form-control"
-						placeholder="New Oportunity" value="">
-					<label class="form-label" for="contactSubject">Subject</label>
-					<!-- <div class="invalid-feedback">
-					Please enter a valid email.
-				</div> -->
-				</div>
-				<!-- Message -->
-				<div class="form-floating mb-3">
-					<textarea name="contactMessage" id="contactMessage" class="form-control" placeholder="Message Body"
-						required=""></textarea>
-					<label class="form-label" for="contactMessage">Message</label>
-					<!-- <div class="invalid-feedback">
-					Please don't spam me with empty emails.
-				</div> -->
-				</div>
-				<div class="form-field">
-					<button class="submitform btn btn-seb-intro">Send Email <i
-							class="fa-solid fa-paper-plane"></i></button>
+				<div>
+					<a role="button" type="button" class="btn btn-seb-intro"
+						href="mailto:sebastian.villa100@gmail.com?subject=Hi from your Website &body= Hi Seb, %0D%0A%0D%0A[write your message here!] %0D%0A%0D%0AThanks, %0D%0A[Your email signature]"
+						title="Click me 📧" class="btn btn-seb-intro">Open Email <i
+							class="fa-solid fa-paper-plane"></i></a>
+
+					<!-- <button class="btn btn-seb-intro" href="mailto:sebastian.villa100@gmail.com">Open Email <i -->
+					<!-- class="fa-solid fa-paper-plane"></i></button> -->
 					<div id="submit-loader">
-						<div class="text-loader">Sending...</div>
+						<div class="text-loader">Opening...</div>
 						<div class="s-loader">
 							<div class="bounce1"></div>
 							<div class="bounce2"></div>
@@ -88,7 +64,7 @@
 				</div>
 				<!-- contact-success -->
 				<div id="message-success">
-					<i class="fa fa-check"></i>Your message was sent, thank you!<br>
+					<i class="fa fa-check"></i>Make sure you hit send, thank you!<br>
 				</div>
 			</div>
 		</div>
@@ -99,16 +75,16 @@
 				<div class="col-sm-4 col-md-3 col-lg-4">
 					<i class="bi bi-geo-alt-fill"></i>
 					<h5>Where to find me</h5>
-					<p>Eden Prairie / Savage, MN
+					<p>Manhattan Beach / Los Angeles, CA
+						<!-- Eden Prairie / Savage, MN -->
 						<!-- DFW / College Station, TX -->
-						<!-- Los Angeles, CA -->
 					</p>
 				</div>
 				<div class="w-100 d-sm-none"></div>
 				<div class="col-sm-4 col-md-3 col-lg-4">
 					<i class="bi bi-envelope"></i>
 					<h5>Email Me At</h5>
-					<p>sebvc@tamu.edu
+					<p>sebastian.villa100&#8203;@gmail.com
 						<!-- sebastian.villacuellar@gmail.com -->
 					</p>
 				</div>
